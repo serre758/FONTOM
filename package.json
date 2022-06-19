@@ -14,16 +14,16 @@
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
         "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/serre758/FONTOM",
     "author": {
         "name": "BrunoSobrino"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/serre758"
+        "url": "git+https://github.com/serre758/FONTOM/TheMystic-Bot-MD"
     },
     "bugs": {
-        "url": "https://github.com/serre758"
+        "url": "https://github.com/serre758/FONTOM/TheMystic-Bot-MD"
     },
     "license": "MIT",
     "dependencies": {
