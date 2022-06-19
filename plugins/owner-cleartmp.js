@@ -20,7 +20,7 @@ const stats = statSync(file)
 unlinkSync(file)
 })}
 handler.help = ['cleartmp']
-handler.tags = ['owner']
+handler.tags = ['владелиц']
 handler.command = /^(cleartmp|cleartemp)$/i
 handler.rowner = true
 export default handler
