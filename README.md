@@ -16,8 +16,8 @@ ADVERTENCIA: HEROKU ESTA SUSPENDIENDO CUENTAS POR SOLO USAR EL BOT, POR AHORA NO
 ```
 
 ### `—◉ ⚙️ AJUSTES ⚙️`
-- CLONAR EL REPOSITORIO [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/fork)
-- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/BrunoSobrino/TheMystic-Bot-MD/blob/master/config.js)
+- CLONAR EL REPOSITORIO [Aqui](https://github.com/serre758/FONTOM/TheMystic-Bot-MD/fork)
+- CAMBIAR NÚMERO DEL OWNER [Aqui](https://github.com/serre758/FONTOM/TheMystic-Bot-MD/blob/master/config.js)
 
 ### `—◉ 👾 ACTIVAR EN TERMUX 👾`
 ```bash
@@ -31,7 +31,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 > pkg install ffmpeg -y
 > pkg install imagemagick -y
 > pkg install yarn
-> git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD
+> git clone https://github.com/serre758/FONTOM/TheMystic-Bot-MD
 > cd TheMystic-Bot-MD
 > npm install
 > yarn install 

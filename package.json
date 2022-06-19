@@ -12,11 +12,11 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://FONTOM:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
     },
     "homepage": "https://github.com/serre758/FONTOM",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "FONTOM"
     },
     "repository": {
         "type": "git",
