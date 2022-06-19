@@ -9,5 +9,5 @@ sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}})
 }
 handler.command = ['sc','script']
 handler.help = ['sc']
-handler.tags = ['General']
+handler.tags = ['ОБЩИЕ']
 export default handler
