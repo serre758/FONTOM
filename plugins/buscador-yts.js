@@ -4,7 +4,7 @@ if (!text) throw '*[❗𝐈𝐍𝐅𝐎❗] 𝙸𝙽𝚂𝙴𝚁𝚃𝙴 𝙴�
 const { video, channel } = await youtubeSearch(text)
 let teks = [...video, ...channel].map(v => {
 switch (v.type) {
-case 'video': return `
+case 'видео': return `
 📌 *${v.title}* (${v.url})
 ⌚ 𝙳𝚞𝚛𝚊𝚌𝚒𝚘𝚗: ${v.durationH}
 ⏲️ 𝙿𝚞𝚋𝚕𝚒𝚌𝚊𝚍𝚘 ${v.publishedTime}

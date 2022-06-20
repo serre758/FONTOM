@@ -71,7 +71,7 @@ let str = `
 
 *<ИНФОРМАЦИЯ О БОТЕ/>*
 
-° ඬ ⃟ 💟 _${usedPrefix}grupos_
+° ඬ ⃟ 💟 _${usedPrefix}группы_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
 ° ඬ ⃟ 💟 _${usedPrefix}infobot_
 ° ඬ ⃟ 💟 _${usedPrefix}donar_

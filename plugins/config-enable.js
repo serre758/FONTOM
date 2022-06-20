@@ -64,7 +64,7 @@ let bot = global.db.data.settings[conn.user.jid] || {}
 let type = (args[0] || '').toLowerCase()
 let isAll = false, isUser = false
 switch (type) {
-case 'welcome':
+case 'приветствие':
 if (!m.isGroup) {
 if (!isOwner) {
 global.dfail('group', m, conn)
@@ -88,7 +88,7 @@ throw false
 }
 chat.detect = isEnable
 break
-case 'delete':
+case 'удалить':
 if (m.isGroup) {
 if (!(isAdmin || isOwner)) {
 global.dfail('admin', m, conn)
