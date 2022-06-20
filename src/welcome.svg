@@ -178,16 +178,16 @@
     <g id="_1661899539392">
       <rect class="fil0 str0" width="1280" height="1280" />
       <g style="clip-path:url(#id0)">
-        <image x="-599" y="-1559" width="2538" height="4417" xlink:href="приветствие_Images\приветствие_ImgID1.png" />
+        <image x="-599" y="-1559" width="2538" height="4417" xlink:href="welcome_Images\welcome_ImgID1.png" />
       </g>
       <g style="clip-path:url(#id1)">
-        <image x="297" y="153" width="687" height="687" xlink:href="приветствие_Images\приветствие_ImgID2.png" />
+        <image x="297" y="153" width="687" height="687" xlink:href="welcome_Images\welcome_ImgID2.png" />
       </g>
       <text x="112" y="944" class="fil1 fnt0">Esta es una palabra para los miembros que están fuera si puedes.</text>
       <!-- <text x="112" y="997" class="fil1 fnt0">Yang  Panjang</text> -->
       <path class="fil2" d="M297 658l183 0c22,0 40,18 40,39l0 142 -223 0 0 -181z" />
       <g style="clip-path:url(#id2)">
-        <image x="316" y="704" width="179.998" height="99.9993" xlink:href="приветствие_Images\приветствие_ImgID3.png" />
+        <image x="316" y="704" width="179.998" height="99.9993" xlink:href="welcome_Images\welcome_ImgID3.png" />
       </g>
       <text x="482" y="105" class="fil2 fnt1">Nombre del Grupo</text>
       <text x="109" y="1071" class="fil2 fnt2">fuera de nombre</text>
