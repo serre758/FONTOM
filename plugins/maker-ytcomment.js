@@ -7,6 +7,6 @@ username: conn.getName(m.sender)
 }), 'error.png', '*¡¡𝙶𝚁𝙰𝙲𝙸𝙰𝚂 𝙿𝙾𝚁 𝙲𝙾𝙼𝙴𝙽𝚃𝙰𝚁!!*', m)
 }
 handler.help = ['ytcomment <comment>']
-handler.tags = ['создатель'] 
+handler.tags = ['maker'] 
 handler.command = /^(ytcomment)$/i
 export default handler

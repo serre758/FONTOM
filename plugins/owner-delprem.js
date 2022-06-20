@@ -11,7 +11,7 @@ contextInfo: {
 mentionedJid: [who]
 }})}
 handler.help = ['delprem <@user>']
-handler.tags = ['владелиц']
+handler.tags = ['owner']
 handler.command = /^(remove|-|del)prem$/i
 handler.group = true
 handler.rowner = true

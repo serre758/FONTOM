@@ -5,7 +5,7 @@ m.reply(`*𝙻𝙸𝚂𝚃𝙰 𝙳𝙴 𝙶𝚁𝚄𝙿𝙾𝚂 𝙴𝙽 𝙻�
 ${txt}
 `.trim())
 }
-handler.help = ['ГРУППА', 'grouplist']
-handler.tags = ['ИНФОРМАЦИЯ']
+handler.help = ['groups', 'grouplist']
+handler.tags = ['info']
 handler.command = /^(groups|grouplist|listadegrupo|gruposlista|listagrupos)$/i
 export default handler

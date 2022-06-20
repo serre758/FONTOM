@@ -30,7 +30,7 @@ let tags = {
 const defaultMenu = {
   before: `
 ╭═┅〘 𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭 〙═╮
-║ 👋🏻 ПРИВЕТ %name!
+║ 👋🏻 𝙷𝙾𝙻𝙰 %name!
 ║ 
 ║ 📅 𝙵𝙴𝙲𝙷𝙰: *%week, %date*
 ║ 🕰️ 𝙷𝙾𝚁𝙰: *%time*
@@ -144,7 +144,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let vn = './media/menu.mp3'
     const pp = './Menu2.jpg'
-    conn.sendHydrated(m.chat, text.trim(), '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝', pp, 'https://github.com/serre758/FONTOM', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+    conn.sendHydrated(m.chat, text.trim(), '𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝', pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
       ['𝙳𝙾𝙽𝙰𝚁', '/donasi'],
       ['𝙾𝚆𝙽𝙴𝚁', '/owner']
     ], m,)

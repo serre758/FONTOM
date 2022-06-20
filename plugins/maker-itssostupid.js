@@ -7,6 +7,6 @@ dog: text || 'im+stupid'
 }), 'error.png', `*@${author}*`, m)
 }  
 handler.help = ['itssostupid', 'iss', 'stupid']
-handler.tags = ['создатель']
+handler.tags = ['maker']
 handler.command = /^(itssostupid|iss|stupid)$/i
 export default handler

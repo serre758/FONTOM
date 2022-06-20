@@ -7,6 +7,6 @@ username: conn.getName(m.sender)
 }), 'error.png', '*¡¡𝙸𝙼𝙰𝙶𝙴𝙽 𝙿𝙸𝚇𝙴𝙻𝙴𝙰𝙳𝙰 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾!!*', m)
 }
 handler.help = ['pixel','difuminar']
-handler.tags = ['создатель']
+handler.tags = ['maker']
 handler.command = /^(pixel|pixelar|difuminar)$/i
 export default handler

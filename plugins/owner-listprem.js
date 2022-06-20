@@ -4,7 +4,7 @@ let prem = global.prems.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').f
 ` + prem.map(v => '- @' + v.replace(/@.+/, '')).join`\n`, m, { contextInfo: { mentionedJid: prem } })
 }
 handler.help = ['premlist']
-handler.tags = ['владелиц']
+handler.tags = ['owner']
 handler.command = /^(listprem|premlist)$/i
 handler.rowner = true
 export default handler
