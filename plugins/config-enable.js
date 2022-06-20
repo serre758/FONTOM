@@ -29,28 +29,28 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
 ┣ ඬ⃟ℹ️ _${usedPrefix}включить *приветствие*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}выключить *приветствие*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *public*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *modohorny*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *antilink2*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *detect*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *restrict*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *pconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *gconly*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autoread*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *audios*_
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *autosticker*_
-┣ ඬ⃟ℹ️ _${usedPrefix}disable *autosticker*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *public*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *public*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *modohorny*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *modohorny*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *antilink*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *antilink*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *antilink2*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *antilink2*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *detect*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *detect*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *restrict*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *restrict*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *pconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *pconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *gconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *gconly*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *autoread*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *autoread*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *audios*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *audios*_
+┣ ඬ⃟ℹ️ _${usedPrefix}включить *autosticker*_
+┣ ඬ⃟ℹ️ _${usedPrefix}выключить *autosticker*_
 ┗━━━━━━━━━━━━━┛
 ${author}`,
 title: null,
@@ -207,11 +207,11 @@ default:
 if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, listMessage)
 throw false
 }
-conn.sendButton(m.chat, `🗂️ 𝐎𝐏𝐂𝐈𝐎𝐍: ${type} 
-🎚️ 𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? '𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾' : '𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝙳𝙾'}
-📣 𝐏𝐀𝐑𝐀: ${isAll ? '𝙴𝚂𝚃𝙴 𝙱𝙾𝚃' : isUser ? '' : '𝙴𝚂𝚃𝙴 𝙲𝙷𝙰𝚃'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '.menu']],m)}
+conn.sendButton(m.chat, `🗂️ ВЫБОР: ${type} 
+🎚️ ВЫБРАНО: ${isEnable ? 'АКТИВИРОВАТЬ' : 'ДЕАКТИВИРОВАТЬ'}
+📣 КОМУ: ${isAll ? 'ЭТОТ ЧАТ' : isUser ? '' : 'ЭТОТ ЧАТ'}`, author, null, [[`${isEnable ? '✖️ 𝙳𝙴𝚂𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✖️' : '✔️ 𝙰𝙲𝚃𝙸𝚅𝙰𝚁 ✔️'}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], ['👾 𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻 👾', '.menu']],m)}
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'владелиц']
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
+handler.command = /^((вк|вык)включить|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
 export default handler
