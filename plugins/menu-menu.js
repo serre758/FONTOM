@@ -113,8 +113,8 @@ let str = `
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
-° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
-° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
+° ඬ⃟☑️ _${usedPrefix}enable *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}disable *приветствие*_
 ° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
 ° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
 ° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
@@ -160,7 +160,7 @@ let str = `
 
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
-° ඬ⃟💎 _${usedPrefix}add *<numero>*_
+° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
 ° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
@@ -172,7 +172,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}setname *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}setdesc *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}invocar *<texto>*_
-° ඬ⃟💎 _${usedPrefix}setwelcome *<texto>*_
+° ඬ⃟💎 _${usedPrefix}setприветствие *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 

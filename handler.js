@@ -248,12 +248,12 @@ export async function handler(chatUpdate) {
             if (chat) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
-                if (!('welcome' in chat))
-                    chat.welcome = true
+                if (!('приветствие' in chat))
+                    chat.приветствие = true
                 if (!('detect' in chat))
                     chat.detect = true
-                if (!('sWelcome' in chat))
-                    chat.sWelcome = ''
+                if (!('sприветствие' in chat))
+                    chat.sприветствие = ''
                 if (!('sBye' in chat))
                     chat.sBye = ''
                 if (!('sPromote' in chat))
@@ -281,9 +281,9 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
+                    приветствие: true,
                     detect: true,
-                    sWelcome: '',
+                    sприветствие: '',
                     sBye: '',
                     sPromote: '',
                     sDemote: '',
@@ -631,9 +631,9 @@ export async function participantsUpdate({ id, participants, action }) {
     let chat = global.db.data.chats[id] || {}
     let text = ''
     switch (action) {
-        case 'add':
-        case 'remove':
-            if (chat.welcome) {
+        case 'добавить':
+        case 'убрать':
+            if (chat.приветствие) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
                     let pp = './src/sinfoto.jpg'
@@ -641,7 +641,7 @@ export async function participantsUpdate({ id, participants, action }) {
                         pp = await this.profilePictureUrl(user, 'image')
                     } catch (e) {
                     } finally {
-                        text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Welcome, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
+                        text = (action === 'add' ? (chat.sприветствие || this.приветствие || conn.приветствие || 'приветствие, @user!').replace('@subject', await this.getName(id)).replace('@desc', groupMetadata.desc?.toString() || '*𝚂𝙸𝙽 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝙲𝙸𝙾𝙽*') :
                             (chat.sBye || this.bye || conn.bye || 'Bye, @user!')).replace('@user', await this.getName(user))
                             let apii = await this.getFile(pp)
                             this.sendHydrated(id, text, groupMetadata.subject, apii.data, 'https://github.com/serre758/FONTOM', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
@@ -653,10 +653,10 @@ export async function participantsUpdate({ id, participants, action }) {
             }
             break
         case 'promote':
-        case 'daradmin':
+        case 'датьадмина':
         case 'darpoder':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
-        case 'demote':
+        case 'понизить':
         case 'quitarpoder':
         case 'quitaradmin':
             if (!text)
