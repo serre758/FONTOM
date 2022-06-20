@@ -95,7 +95,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         prefix: 'customPrefix' in plugin,
         limit: plugin.limit,
         premium: plugin.premium,
-        enabled: !plugin.disabled,
+        вклd: !plugin.disabled,
       }
     })
     for (let plugin of help)

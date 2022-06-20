@@ -705,8 +705,8 @@ export async function deleteUpdate(message) {
 *■ Nombre:* @${participant.split`@`[0]}
 *■ Enviando el mensaje..*
 *■ Para desactivar esta función escriba el comando:*
-*—◉ #disable antidelete*
-*—◉ #enable delete*
+*—◉ #выкл antidelete*
+*—◉ #вкл delete*
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]

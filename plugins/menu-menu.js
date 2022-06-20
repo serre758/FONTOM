@@ -113,20 +113,20 @@ let str = `
 
 *<ВКЛЮЧЕНИЕ И ВЫКЛЮЧЕНИЕ/>*
 
-° ඬ⃟☑️ _${usedPrefix}enable *приветствие*_
-° ඬ⃟☑️ _${usedPrefix}disable *приветствие*_
-° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink*_
-° ඬ⃟☑️ _${usedPrefix}enable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}disable *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}enable *detect*_
-° ඬ⃟☑️ _${usedPrefix}disable *detect*_
-° ඬ⃟☑️ _${usedPrefix}enable *audios*_
-° ඬ⃟☑️ _${usedPrefix}disable *audios*_
-° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}вкл *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}выкл *приветствие*_
+° ඬ⃟☑️ _${usedPrefix}вкл *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}выкл *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}вкл *antilink*_
+° ඬ⃟☑️ _${usedPrefix}выкл *antilink*_
+° ඬ⃟☑️ _${usedPrefix}вкл *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}выкл *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}вкл *detect*_
+° ඬ⃟☑️ _${usedPrefix}выкл *detect*_
+° ඬ⃟☑️ _${usedPrefix}вкл *audios*_
+° ඬ⃟☑️ _${usedPrefix}выкл *audios*_
+° ඬ⃟☑️ _${usedPrefix}вкл *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}выкл *autosticker*_
 
 *<СООБЩЕНИЯ ОБ ОШИБКАХ/>*
 
@@ -402,16 +402,16 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 *<𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟👑 _${usedPrefix}cajafuerte_
-° ඬ⃟👑 _${usedPrefix}enable *restrict*_
-° ඬ⃟👑 _${usedPrefix}disable *restrict*_
-° ඬ⃟👑 _${usedPrefix}enable *autoread*_
-° ඬ⃟👑 _${usedPrefix}disable *autoread*_
-° ඬ⃟👑 _${usedPrefix}enable *public*_
-° ඬ⃟👑 _${usedPrefix}disable *public*_
-° ඬ⃟👑 _${usedPrefix}enable *pconly*_
-° ඬ⃟👑 _${usedPrefix}disable *pconly*_
-° ඬ⃟👑 _${usedPrefix}enable *gconly*_
-° ඬ⃟👑 _${usedPrefix}disable *gconly*_
+° ඬ⃟👑 _${usedPrefix}вкл *restrict*_
+° ඬ⃟👑 _${usedPrefix}выкл *restrict*_
+° ඬ⃟👑 _${usedPrefix}вкл *autoread*_
+° ඬ⃟👑 _${usedPrefix}выкл *autoread*_
+° ඬ⃟👑 _${usedPrefix}вкл *public*_
+° ඬ⃟👑 _${usedPrefix}выкл *public*_
+° ඬ⃟👑 _${usedPrefix}вкл *pconly*_
+° ඬ⃟👑 _${usedPrefix}выкл *pconly*_
+° ඬ⃟👑 _${usedPrefix}вкл *gconly*_
+° ඬ⃟👑 _${usedPrefix}выкл *gconly*_
 ° ඬ⃟👑 _${usedPrefix}banchat_
 ° ඬ⃟👑 _${usedPrefix}unbanchat_
 ° ඬ⃟👑 _${usedPrefix}banuser *<@tag>*_
