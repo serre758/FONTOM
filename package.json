@@ -1,5 +1,5 @@
 {
-    "name": "TheMystic-Bot-MD",
+    "name": "FONTOM",
     "version": "1.0.0",
     "description": "Subscribete al canal de YT The Shadow Borkers",
     "main": "index.js",
@@ -12,18 +12,18 @@
     "scripts": {
         "start": "node index.js",
         "cli": "node . --optimize_for_size --max_old_space_size=460 index.js",
-        "db": "node . --autocleartmp --db 'mongodb+srv://BrunoSobrino:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
+        "db": "node . --autocleartmp --db 'mongodb+srv://serre758:Akhmad6825@cluster0.mflne.mongodb.net/TheMystic-Bot-MD?retryWrites=true&w=majority'"
     },
-    "homepage": "https://github.com/BrunoSobrino",
+    "homepage": "https://github.com/serre758",
     "author": {
-        "name": "BrunoSobrino"
+        "name": "serre758"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BrunoSobrino/TheMystic-Bot-MD.git"
+        "url": "git+https://github.com/serre758/FONTOM.git"
     },
     "bugs": {
-        "url": "https://github.com/BrunoSobrino/TheMystic-Bot-MD/issues"
+        "url": "https://github.com/serre758/FONTOM/issues"
     },
     "license": "MIT",
     "dependencies": {
