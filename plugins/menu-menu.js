@@ -63,13 +63,13 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
     
 
 let str = `
-*ミ💖 ПРИВЕТ ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 💖彡*
+*ミ💖 ПРИВЕТ ✨${name}✨, ЭТО ПОЛНОЕ МЕНЮ БОТА - 𝙱𝙾𝚃 💖彡*
 
-*📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
-*📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
-*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
+*📅 ДАТА: ${week}, ${date}*
+*📈 АКТИВНОЕ ВРЕМЯ: ${uptime}*
+*📊 ПОЛЬЗОВАТЕЛЕЙ: ${rtotalreg}*
 
-*<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
+*<ИНФОРМАЦИЯ О БОТЕ/>*
 
 ° ඬ ⃟ 💟 _${usedPrefix}grupos_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
@@ -80,11 +80,11 @@ let str = `
 ° ඬ ⃟ 💟 _${usedPrefix}script_
 ° ඬ ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 
-*<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
+*<ПРИСОЕДИНЕНИЕ БОТА К ГРУППЕ/>*
 
 ° ඬ⃟👽 _${usedPrefix}join *<enlace / link / url>*_
 
-*<𝕁𝕌𝔼𝔾𝕆𝕊/>*
+*<ИГРЫ/>*
 
 ° ඬ⃟🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ° ඬ⃟🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
@@ -111,7 +111,7 @@ let str = `
 ° ඬ⃟🎖️ _${usedPrefix}verdad_
 ° ඬ⃟🎖️ _${usedPrefix}reto_
 
-*<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
+*<ВКЛЮЧЕНИЕ И ВЫКЛЮЧЕНИЕ/>*
 
 ° ඬ⃟☑️ _${usedPrefix}enable *приветствие*_
 ° ඬ⃟☑️ _${usedPrefix}disable *приветствие*_
@@ -128,11 +128,11 @@ let str = `
 ° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
 ° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
 
-*<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
+*<СООБЩЕНИЯ ОБ ОШИБКАХ/>*
 
 ° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
 
-*<𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊/>*
+*<ЗАГРУЗКИ/>*
 
 ° ඬ⃟📥 _${usedPrefix}facebook *<enlace / link / url>*_
 ° ඬ⃟📥 _${usedPrefix}instagram *<enlace / link / url>*_
@@ -158,7 +158,7 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}igstory *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}tiktokstalk *<nombre de usuario>*_
 
-*<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
+*<ГРУППЫ/>* 
 
 ° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
 ° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
@@ -176,7 +176,7 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 
-*<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
+*<КОНВЕРТЕРЫ/>*
 
 ° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
 ° ඬ⃟🧧 _${usedPrefix}tomp3 *<responde a un video / nota de voz>*_
