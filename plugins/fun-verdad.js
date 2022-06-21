@@ -126,7 +126,7 @@ global.verdad = [
 " ¿Qué importancia tienen para ti los juegos previos prolongados?", 
 " ¿Qué debe hacer un hombre o una mujer para seducirte?", 
 " ¿Alguna vez has tenido sexo con un buen amigo?", 
-" ¿Alguna vez ha tenido relaciones sexuales con alguno de estos группы, excepto con su pareja?", 
+" ¿Alguna vez ha tenido relaciones sexuales con alguno de estos grupos, excepto con su pareja?", 
 "¿Qué animal se adapta mejor a ti y por qué?", 
 " ¿Cuál es tu peor cita?", 
 " ¿A quién quieres besar ahora?", 

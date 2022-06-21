@@ -631,8 +631,8 @@ export async function participantsUpdate({ id, participants, action }) {
     let chat = global.db.data.chats[id] || {}
     let text = ''
     switch (action) {
-        case 'добавить':
-        case 'убирать':
+        case 'add':
+        case 'remove':
             if (chat.welcome) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
@@ -653,7 +653,7 @@ export async function participantsUpdate({ id, participants, action }) {
             }
             break
         case 'promote':
-        case 'датьадмина':
+        case 'daradmin':
         case 'darpoder':
             text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
         case 'demote':
@@ -705,8 +705,8 @@ export async function deleteUpdate(message) {
 *■ Nombre:* @${participant.split`@`[0]}
 *■ Enviando el mensaje..*
 *■ Para desactivar esta función escriba el comando:*
-*—◉ #выкл antidelete*
-*—◉ #вкл delete*
+*—◉ #disable antidelete*
+*—◉ #enable delete*
 ━━━━⬣  𝘼𝙉𝙏𝙄 𝘿𝙀𝙇𝙀𝙏𝙀  ⬣━━━━
 `.trim(), msg, {
             mentions: [participant]

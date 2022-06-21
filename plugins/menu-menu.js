@@ -63,15 +63,15 @@ text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length
     
 
 let str = `
-*ミ💖 ПРИВЕТ ✨${name}✨, ЭТО ПОЛНОЕ МЕНЮ БОТА - 𝙱𝙾𝚃 💖彡*
+*ミ💖 𝙷𝙾𝙻𝙰 ✨${name}✨, 𝙰𝚀𝚄𝙸 𝙴𝚂𝚃𝙰 𝙴𝙻 𝙼𝙴𝙽𝚄 𝙲𝙾𝙼𝙿𝙻𝙴𝚃𝙾 𝙳𝙴 𝚃𝙷𝙴 𝙼𝚈𝚂𝚃𝙸𝙲 - 𝙱𝙾𝚃 💖彡*
 
-*📅 ДАТА: ${week}, ${date}*
-*📈 АКТИВНОЕ ВРЕМЯ: ${uptime}*
-*📊 ПОЛЬЗОВАТЕЛЕЙ: ${rtotalreg}*
+*📅 𝙵𝙴𝙲𝙷𝙰: ${week}, ${date}*
+*📈 𝚃𝙸𝙴𝙼𝙿𝙾 𝙰𝙲𝚃𝙸𝚅𝙾: ${uptime}*
+*📊 𝚄𝚂𝚄𝙰𝚁𝙸𝙾𝚂: ${rtotalreg}*
 
-*<ИНФОРМАЦИЯ О БОТЕ/>*
+*<𝕀ℕ𝔽𝕆ℝ𝕄𝔸ℂ𝕀𝕆ℕ 𝔻𝔼𝕃 𝔹𝕆𝕋/>*
 
-° ඬ ⃟ 💟 _${usedPrefix}группы_
+° ඬ ⃟ 💟 _${usedPrefix}grupos_
 ° ඬ ⃟ 💟 _${usedPrefix}estado_
 ° ඬ ⃟ 💟 _${usedPrefix}infobot_
 ° ඬ ⃟ 💟 _${usedPrefix}donar_
@@ -80,11 +80,11 @@ let str = `
 ° ඬ ⃟ 💟 _${usedPrefix}script_
 ° ඬ ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 
-*<ПРИСОЕДИНЕНИЕ БОТА К ГРУППЕ/>*
+*<𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆/>*
 
 ° ඬ⃟👽 _${usedPrefix}join *<enlace / link / url>*_
 
-*<ИГРЫ/>*
+*<𝕁𝕌𝔼𝔾𝕆𝕊/>*
 
 ° ඬ⃟🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ° ඬ⃟🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
@@ -111,28 +111,28 @@ let str = `
 ° ඬ⃟🎖️ _${usedPrefix}verdad_
 ° ඬ⃟🎖️ _${usedPrefix}reto_
 
-*<ВКЛЮЧЕНИЕ И ВЫКЛЮЧЕНИЕ/>*
+*<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
-° ඬ⃟☑️ _${usedPrefix}вкл *приветствие*_
-° ඬ⃟☑️ _${usedPrefix}выкл *приветствие*_
-° ඬ⃟☑️ _${usedPrefix}вкл *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}выкл *modohorny*_
-° ඬ⃟☑️ _${usedPrefix}вкл *antilink*_
-° ඬ⃟☑️ _${usedPrefix}выкл *antilink*_
-° ඬ⃟☑️ _${usedPrefix}вкл *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}выкл *antilink2*_
-° ඬ⃟☑️ _${usedPrefix}вкл *detect*_
-° ඬ⃟☑️ _${usedPrefix}выкл *detect*_
-° ඬ⃟☑️ _${usedPrefix}вкл *audios*_
-° ඬ⃟☑️ _${usedPrefix}выкл *audios*_
-° ඬ⃟☑️ _${usedPrefix}вкл *autosticker*_
-° ඬ⃟☑️ _${usedPrefix}выкл *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
+° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
+° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
+° ඬ⃟☑️ _${usedPrefix}enable *antilink*_
+° ඬ⃟☑️ _${usedPrefix}disable *antilink*_
+° ඬ⃟☑️ _${usedPrefix}enable *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}disable *antilink2*_
+° ඬ⃟☑️ _${usedPrefix}enable *detect*_
+° ඬ⃟☑️ _${usedPrefix}disable *detect*_
+° ඬ⃟☑️ _${usedPrefix}enable *audios*_
+° ඬ⃟☑️ _${usedPrefix}disable *audios*_
+° ඬ⃟☑️ _${usedPrefix}enable *autosticker*_
+° ඬ⃟☑️ _${usedPrefix}disable *autosticker*_
 
-*<СООБЩЕНИЯ ОБ ОШИБКАХ/>*
+*<ℝ𝔼ℙ𝕆ℝ𝕋𝔼𝕊 𝔻𝔼 𝔽𝔸𝕃𝕃𝕆𝕊/>*
 
 ° ඬ⃟🔰 _${usedPrefix}reporte *<texto>*_
 
-*<ЗАГРУЗКИ/>*
+*<𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊/>*
 
 ° ඬ⃟📥 _${usedPrefix}facebook *<enlace / link / url>*_
 ° ඬ⃟📥 _${usedPrefix}instagram *<enlace / link / url>*_
@@ -158,12 +158,12 @@ let str = `
 ° ඬ⃟📥 _${usedPrefix}igstory *<nombre de usuario>*_
 ° ඬ⃟📥 _${usedPrefix}tiktokstalk *<nombre de usuario>*_
 
-*<ГРУППЫ/>* 
+*<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
-° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
+° ඬ⃟💎 _${usedPrefix}add *<numero>*_
 ° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
-° ඬ⃟💎 _${usedPrefix}содействовать *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
 ° ඬ⃟💎 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_
@@ -172,11 +172,11 @@ let str = `
 ° ඬ⃟💎 _${usedPrefix}setname *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}setdesc *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}invocar *<texto>*_
-° ඬ⃟💎 _${usedPrefix}setприветствие *<texto>*_
+° ඬ⃟💎 _${usedPrefix}setwelcome *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}setbye *<texto>*_
 ° ඬ⃟💎 _${usedPrefix}hidetag *<texto>*_
 
-*<КОНВЕРТЕРЫ/>*
+*<ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟🧧 _${usedPrefix}toimg *<responde a un sticker>*_
 ° ඬ⃟🧧 _${usedPrefix}tomp3 *<responde a un video / nota de voz>*_
@@ -402,16 +402,16 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 *<𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
 ° ඬ⃟👑 _${usedPrefix}cajafuerte_
-° ඬ⃟👑 _${usedPrefix}вкл *restrict*_
-° ඬ⃟👑 _${usedPrefix}выкл *restrict*_
-° ඬ⃟👑 _${usedPrefix}вкл *autoread*_
-° ඬ⃟👑 _${usedPrefix}выкл *autoread*_
-° ඬ⃟👑 _${usedPrefix}вкл *public*_
-° ඬ⃟👑 _${usedPrefix}выкл *public*_
-° ඬ⃟👑 _${usedPrefix}вкл *pconly*_
-° ඬ⃟👑 _${usedPrefix}выкл *pconly*_
-° ඬ⃟👑 _${usedPrefix}вкл *gconly*_
-° ඬ⃟👑 _${usedPrefix}выкл *gconly*_
+° ඬ⃟👑 _${usedPrefix}enable *restrict*_
+° ඬ⃟👑 _${usedPrefix}disable *restrict*_
+° ඬ⃟👑 _${usedPrefix}enable *autoread*_
+° ඬ⃟👑 _${usedPrefix}disable *autoread*_
+° ඬ⃟👑 _${usedPrefix}enable *public*_
+° ඬ⃟👑 _${usedPrefix}disable *public*_
+° ඬ⃟👑 _${usedPrefix}enable *pconly*_
+° ඬ⃟👑 _${usedPrefix}disable *pconly*_
+° ඬ⃟👑 _${usedPrefix}enable *gconly*_
+° ඬ⃟👑 _${usedPrefix}disable *gconly*_
 ° ඬ⃟👑 _${usedPrefix}banchat_
 ° ඬ⃟👑 _${usedPrefix}unbanchat_
 ° ඬ⃟👑 _${usedPrefix}banuser *<@tag>*_
@@ -428,9 +428,9 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}listprem_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/serre758/FONTOM', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['📮 ДОНАТ 📮', '/donasi'],
-['🌹 ВЛАДЕЛИЦ 🌹', '/owner'],
-['🐾 ИНФОБОТ 🐾', '/infobot']
+['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
+['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'],
+['🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾', '/infobot']
 ], m,)
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 //type: 'audioMessage', 
@@ -439,9 +439,9 @@ conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/serre758/FONTOM', '�
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 throw e
 }}
-handler.help = ['меню', 'help', '?']
+handler.help = ['menu', 'help', '?']
 handler.tags = ['main']
-handler.command = /^(menucompleto|меню|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
+handler.command = /^(menucompleto|menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|m|\?)$/i
 handler.exp = 50
 handler.fail = null
 export default handler
