@@ -160,7 +160,7 @@ let str = `
 
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
-° ඬ⃟💎 _${usedPrefix}add *<numero>*_
+° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
 ° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
@@ -428,9 +428,9 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ° ඬ⃟👑 _${usedPrefix}listprem_
 `.trim()
 conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/serre758/FONTOM', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
-['📮 𝙳𝙾𝙽𝙰𝚁 📮', '/donasi'],
-['🌹 𝙾𝚆𝙽𝙴𝚁 🌹', '/owner'],
-['🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾', '/infobot']
+['📮 ДОНАТ 📮', '/донат'],
+['🌹 ВЛАДЕЛИЦ 🌹', '/владелиц'],
+['🐾 ИНФОБОТ 🐾', '/инфобот']
 ], m,)
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, {
 //type: 'audioMessage', 
