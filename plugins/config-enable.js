@@ -27,7 +27,7 @@ footer: `╭══〘 ✯✯✯✯✯✯✯✯ 〙═╮
 ┏━━━━━━━━━━━━━┓
 ┣❧ *𝚂𝙴𝙻𝙴𝙲𝙲𝙸𝙾𝙽𝙰 𝚄𝙽𝙰 𝙳𝙴 𝙻𝙰𝚂 𝙾𝙲𝙿𝙸𝙾𝙽𝙴𝚂 𝚀𝚄𝙴 𝚂𝙰𝙻𝙴𝙽 𝙴𝙽 𝙻𝙰 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴 𝙻𝙸𝚂𝚃𝙰 𝙾 𝙳𝙰 𝙲𝙻𝙸𝙲𝙺 𝙴𝙽 𝙰𝙻𝙶𝚄𝙽 𝙱𝙾𝚃𝙾𝙽 𝙳𝙴 𝙴𝚂𝚃𝙴 𝙼𝙴𝙽𝚂𝙰𝙹𝙴*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-┣ ඬ⃟ℹ️ _${usedPrefix}enable *welcome*_
+┣ ඬ⃟ℹ️ _${usedPrefix}вкл *welcome*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *welcome*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}enable *public*_
 ┣ ඬ⃟ℹ️ _${usedPrefix}disable *public*_
@@ -57,7 +57,7 @@ title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
 
-let isEnable = /true|enable|(turn)?on|1/i.test(command)
+let isEnable = /true|вкл|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}
