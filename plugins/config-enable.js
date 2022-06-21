@@ -57,7 +57,7 @@ title: null,
 buttonText: "𝐒𝐄𝐋𝐄𝐂𝐂𝐈𝐎𝐍𝐄 𝐀𝐐𝐔𝐢",
 sections }
 
-let isEnable = /true|вкл|(turn)?on|1/i.test(command)
+let isEnable = /true|вкл|(turn)?вкл|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}
