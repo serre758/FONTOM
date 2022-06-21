@@ -161,7 +161,7 @@ let str = `
 *<𝔾ℝ𝕌ℙ𝕆𝕊/>* 
 
 ° ඬ⃟💎 _${usedPrefix}добавить *<numero>*_
-° ඬ⃟💎 _${usedPrefix}kick *<@tag>*_
+° ඬ⃟💎 _${usedPrefix}удалить *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}grupo *<abrir / cerrar>*_
 ° ඬ⃟💎 _${usedPrefix}promote *<@tag>*_
 ° ඬ⃟💎 _${usedPrefix}demote *<@tag>*_

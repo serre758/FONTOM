@@ -9,9 +9,9 @@ const res = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
 kickedUser.concat(res)
 await delay(1 * 1000)
 }}
-handler.help = ['kick @user']
+handler.help = ['удалить @user']
 handler.tags = ['group']
-handler.command = /^(kick|sacar|\-)$/i
+handler.command = /^(удалить|sacar|\-)$/i
 handler.group = true
 handler.admin = true
 handler.botAdmin = true
