@@ -113,7 +113,7 @@ let str = `
 
 *<𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ/>*
 
-° ඬ⃟☑️ _${usedPrefix}вкл *welcome*_
+° ඬ⃟☑️ _${usedPrefix}enable *welcome*_
 ° ඬ⃟☑️ _${usedPrefix}disable *welcome*_
 ° ඬ⃟☑️ _${usedPrefix}enable *modohorny*_
 ° ඬ⃟☑️ _${usedPrefix}disable *modohorny*_
@@ -401,7 +401,7 @@ _(𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 
 *<𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊/>*
 
-° ඬ⃟👑 _${usedPrefix}вкл *cajafuerte_
+° ඬ⃟👑 _${usedPrefix}cajafuerte_
 ° ඬ⃟👑 _${usedPrefix}enable *restrict*_
 ° ඬ⃟👑 _${usedPrefix}disable *restrict*_
 ° ඬ⃟👑 _${usedPrefix}enable *autoread*_
