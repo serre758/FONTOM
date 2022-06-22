@@ -80,10 +80,10 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
             if (chats) {
                 if (!('mute' in chats)) chats.mute = false
-                if (!('antilink' in chats)) chats.antilink = false
+                if (!('антиссылка' in chats)) chats.антиссылка = false
             } else global.db.data.chats[m.chat] = {
                 mute: false,
-                antilink: false,
+                антиссылка: false,
             }
 		
 	    let setting = global.db.data.settings[botNumber]
@@ -542,11 +542,11 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
 	    case 'donasi': case 'sewabot': case 'sewa': case 'buypremium': case 'donate': {
-                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/79054731060 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/DikaArdnt` }, { quoted: m })
+                hisoka.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/74fd634010128be37972c.jpg' }, caption: `*Hai Kak ${m.pushName}*\n\n Bot Rental Prices\n⭔ 13k Per Group via E-Walet 1 Month\n⭔ 18k via pulsa 1 Month\n\n Premium Price Bot\n⭔ 8k per User 1 bulan\n\nPayment can be via Paypal/link aja/pulsa\n\nFor more details, you can chat with the owner\nhttps://wa.me/79054731060 (Owner)\n\nDonate For Me : \n\n⭔ Paypal : https://www.paypal.me/Cakhaho\n⭔ Saweria : https://saweria.co/serre758` }, { quoted: m })
             }
             break
             case 'sc': {
-                m.reply('Script : https://github.com/serre758/FONTOM\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/DikaArdnt\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
+                m.reply('Script : https://github.com/serre758/FONTOM\n\n Dont Forget Give Star\n\nDonate : 6281615075793 (Link Aja)\nSaweria : https://saweria.co/serre758\nPaypal : https://www.paypal.me/Cakhaho\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -1077,22 +1077,22 @@ break
             }
             }
             break
-            case 'antilink': {
+            case 'антиссылка': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
                 if (args[0] === "on") {
-                if (db.data.chats[m.chat].antilink) return m.reply(`Sudah Aktif Sebelumnya`)
-                db.data.chats[m.chat].antilink = true
-                m.reply(`Antilink Aktif !`)
+                if (db.data.chats[m.chat].антиссылка) return m.reply(`Sudah Aktif Sebelumnya`)
+                db.data.chats[m.chat].антиссылка = true
+                m.reply(`антиссылка Aktif !`)
                 } else if (args[0] === "off") {
-                if (!db.data.chats[m.chat].antilink) return m.reply(`Sudah Tidak Aktif Sebelumnya`)
-                db.data.chats[m.chat].antilink = false
-                m.reply(`Antilink Tidak Aktif !`)
+                if (!db.data.chats[m.chat].антиссылка) return m.reply(`Sudah Tidak Aktif Sebelumnya`)
+                db.data.chats[m.chat].антиссылка = false
+                m.reply(`антиссылка Tidak Aktif !`)
                 } else {
                  let buttons = [
-                        { buttonId: 'antilink on', buttonText: { displayText: 'On' }, type: 1 },
-                        { buttonId: 'antilink off', buttonText: { displayText: 'Off' }, type: 1 }
+                        { buttonId: 'антиссылка вкл', buttonText: { displayText: 'вкл' }, type: 1 },
+                        { buttonId: 'антиссылка выкл', buttonText: { displayText: 'выкл' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `Mode Antilink`, hisoka.user.name, m)
                 }
@@ -1112,8 +1112,8 @@ break
                 m.reply(`${hisoka.user.name} telah di unmute di group ini !`)
                 } else {
                  let buttons = [
-                        { buttonId: 'mute on', buttonText: { displayText: 'On' }, type: 1 },
-                        { buttonId: 'mute off', buttonText: { displayText: 'Off' }, type: 1 }
+                        { buttonId: 'немой вкл', buttonText: { displayText: 'вкл' }, type: 1 },
+                        { buttonId: 'немой выкл', buttonText: { displayText: 'выкл' }, type: 1 }
                     ]
                     await hisoka.sendButtonText(m.chat, buttons, `Mute Bot`, hisoka.user.name, m)
                 }
@@ -1178,17 +1178,17 @@ break
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 882-9202-4190'
+                                    phoneNumber: '+79054731060'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Status Bot',
+                                    displayText: 'Статус бот',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Contact Owner',
-                                    id: 'owner'
+                                    displayText: 'Связаться с владельцем',
+                                    id: 'Владелиц'
                                 }  
                             }, {
                                 quickReplyButton: {

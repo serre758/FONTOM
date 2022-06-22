@@ -268,10 +268,10 @@ export async function handler(chatUpdate) {
                     chat.autosticker = false                    
                 if (!('audios' in chat))
                     chat.audios = false                            
-                if (!('antiLink' in chat))
-                    chat.antiLink = false
-                if (!('antiLink2' in chat))
-                    chat.antiLink2 = false
+                if (!('антиссылка' in chat))
+                    chat.антиссылка = false
+                if (!('антиссылка2' in chat))
+                    chat.антиссылка2 = false
                 if (!('viewonce' in chat))
                     chat.viewonce = false
                 if (!('antiToxic' in chat))

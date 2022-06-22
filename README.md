@@ -20,7 +20,7 @@ This is Script of WhatsApp multi device, working with [`@adiwajshing/baileys`](h
 
 ## My Project
 * New script to replace this script [`look here`](https://github.com/zhwzein/Killua-Zoldyck) (`Support Legacy or Baileys`)
-* WhatsApp Bot normal [`serre758/FONTOM`](https://github.com/DikaArdnt/Hisoka-Morrow)
+* WhatsApp Bot normal [`serre758/FONTOM`](https://github.com/serre758/Hisoka-Morrow)
 * WhatsApp Bot Multi Device [`serre758/FONTOM`](https://github.com/serre758/FONTOM)
 * WhatsApp Bot Using Library whatsapp-web.js [`hisoka-waweb.js`](https://github.com/serre758/FONTOM-waweb.js/)
 
@@ -98,4 +98,4 @@ License: [MIT](https://en.wikipedia.org/wiki/MIT_License)
 
 Support Me
 * [`Paypal`](https://www.paypal.me/Cakhaho)
-* [`Saweria`](https://saweria.co/DikaArdnt)
+* [`Saweria`](https://saweria.co/serre758)
