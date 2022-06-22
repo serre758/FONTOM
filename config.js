@@ -1,7 +1,7 @@
 /**
    * Create By Dika Ardnt.
    * Contact Me on wa.me/+79054731060
-   * Follow https://github.com/DikaArdnt
+   * Follow https://github.com
 */
 
 const fs = require('fs')
@@ -14,13 +14,13 @@ global.APIs = {
 
 // Apikey Website Api
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://zenzapis.xyz': '192e24e3a9b2',
 }
 
 // Other
 global.owner = ['79054731060','79054731060','79054731060']
 global.premium = ['79054731060']
-global.packname = 'Hisoka Morrow'
+global.packname = 'FONTOM'
 global.author = 'WhatsApp Bot'
 global.sessionName = 'hisoka'
 global.prefa = ['','!','.','🐦','🐤','🗿']
