@@ -2503,7 +2503,7 @@ View list of message with ${prefix}listmsg`)
 				let buttons = [{
                                 urlButton: {
                                     displayText: 'Report Bug🐛',
-                                    url: 'https://wa.me/51918303426?text=hello+bro+i+found+a+bug+in+your+bot'
+                                    url: 'https://wa.me/79054731060?text=hello+bro+i+found+a+bug+in+your+bot'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2711,7 +2711,7 @@ case 'darlyn':
                     case 'report':
 		case 'reportar': {
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
-                    	XeonBotInc.sendMessage(`51918303426@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	XeonBotInc.sendMessage(`79054731060@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
@@ -2739,7 +2739,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'wame📍',
-                                    url: 'https://api.whatsapp.com/send/?phone=51918303426&text=hola%20darlyn%20http://perro-animado-darlyn.web.app'
+                                    url: 'https://api.whatsapp.com/send/?phone=79054731060&text=hola%20darlyn%20http://perro-animado-darlyn.web.app'
                                 }
                             }, {
                             	urlButton: {
@@ -2802,7 +2802,7 @@ hydratedFooterText: `╭═〘८≛ 𝓓𝓪𝓻𝓵𝔂𝓷 𔐬☆᤻᤻[𝓼
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'wame📍',
-                                    url: 'https://api.whatsapp.com/send/?phone=51918303426&text=hola%20xd'
+                                    url: 'https://api.whatsapp.com/send/?phone=79054731060&text=hola%20xd'
                                 }
                             }, {
                             	urlButton: {
