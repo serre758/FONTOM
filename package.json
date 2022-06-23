@@ -1,7 +1,7 @@
 {
-  "name": "FONTOM",
-  "version": "2.3.0",
-  "description": "WhatsApp Using Lib Baileys Multi Device",
+  "name": "Darlyn",
+  "version": "1.0.0",
+  "description": "Multi device wa bot created by Xeon Bot Inc.",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -18,10 +18,10 @@
     "bot-md",
     "multi-device"
   ],
-  "author": "Dika Ardnt.",
+  "author": "Xeon",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.2.0",
+    "@adiwajshing/baileys": "^4.0.1",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "axios": "^0.24.0",
@@ -34,12 +34,10 @@
     "fs": "0.0.1-security",
     "got": "^11.8.3",
     "g-i-s": "^2.1.6",
-    "google-it": "^1.6.3",
+    "google-it": "^1.6.2",
     "human-readable": "^0.2.1",
     "jimp": "^0.16.1",
     "jsdom": "^16.4.0",
-    "lowdb": "^2.1.0",
-    "mongoose": "^6.2.1",
     "moment-timezone": "^0.5.34",
     "node-cron": "^3.0.0",
     "node-fetch": "^2.6.1",
@@ -63,10 +61,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serre758/FONTOM.git"
+    "url": "git+https://github.com/DGXeon/CheemsBot-MD.git"
   },
   "bugs": {
-    "url": "https://github.com/serre758/FONTOM/issues"
+    "url": "https://github.com/DGXeon/CheemsBot-MD/issues"
   },
-  "homepage": "https://github.com/serre758/FONTOM#readme"
+  "homepage": "https://github.com/DGXeon/CheemsBot-MD#readme"
 }

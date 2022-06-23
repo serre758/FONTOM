@@ -1,6 +1,6 @@
 /**
    * Create By Dika Ardnt.
-   * Contact Me on wa.me/+7905473106
+   * Contact Me on wa.me/+79054731060
    * Follow https://github.com
 */
 
