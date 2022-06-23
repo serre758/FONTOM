@@ -69,7 +69,7 @@ module.exports = XeonBotInc = async (XeonBotInc, m, chatUpdate, store) => {
         const text = q = args.join(" ")
         const quoted = m.quoted ? m.quoted : m
         const mime = (quoted.msg || quoted).mimetype || ''
-	    const isMedia = /image|video|sticker|audio/.test(mime)
+	    const isMedia = /image|video|стикер|audio/.test(mime)
 	
 // [gc] \\
         const groupMetadata = m.isGroup ? await XeonBotInc.groupMetadata(m.chat).catch(e => {}) : ''
@@ -210,8 +210,8 @@ if (budy.includes('https://chat.whatsapp.com/')) {
         })
 	    
 // [respond cmd with media]
-        if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.sticker)) {
-        let hash = global.db.sticker[m.msg.fileSha256.toString('base64')]
+        if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.стикер)) {
+        let hash = global.db.стикер[m.msg.fileSha256.toString('base64')]
         let { text, mentionedJid } = hash
         let messages = await generateWAMessage(m.chat, { text: text, mentions: mentionedJid }, {
             userJid: XeonBotInc.user.id,
@@ -806,7 +806,7 @@ Ciee Whats Going On💖👀`
                 await XeonBotInc.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-	case 'kick': {
+	case 'удалить': {
 		if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -815,31 +815,31 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'добавить': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'добавить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'promote': {
+	case 'содействовать': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'содействовать').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'demote': {
+	case 'понизить': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'понизить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
         case 'block': {
@@ -911,11 +911,11 @@ let ingfo = `*G R O U P  I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${m.cha
 ds = await getBuffer(pic)
 XeonBotInc.sendMessage(m.chat, { image: ds,caption: ingfo, mentions: [groupMetadata.owner] }, { quoted: m})
 break
-            case 'tagall': case 'tag': {
+            case 'внимание': case 'tag': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 🍒 Tagall 🍒 〙✪══
+let teks = `══✪〘 🍒 внимание 🍒 〙✪══
  
  ➲ *Message : ${q ? q : 'blank'}*\n\n`
                 for (let mem of participants) {
@@ -1154,7 +1154,7 @@ case 'antilink':
 						antilink.push(m.chat)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('Successfully activated the antilink feature')
-						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This group has been installed anti-link\nIf you violate then I will kick`})
+						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This group has been installed anti-link\nIf you violate then I will удалить`})
 					} else if (args[0] === 'off') {
 						if (!isAntiLink) return reply('already deactivated')
 						var ini = antilink.indexOf(m.chat)
@@ -1228,7 +1228,7 @@ case 'antilink':
                 }
             }
             break
-            case 'delete': 
+            case 'удалить': 
 		case 'eliminar':
             case 'del': {
                 if (!m.quoted) throw false
@@ -1362,7 +1362,7 @@ case 'antilink':
              }
              break
 		case 'stiker':
-            case 'sticker': 
+            case 'стикер': 
             case 's': 
             case 'stickergif':
              case 'sgif':
@@ -2959,10 +2959,10 @@ anu = `
   ⬡ ${prefix}group [option]
   ⬡ ${prefix}editinfo [option]
   ⬡ ${prefix}grupinfo
-  ⬡ ${prefix}add @user
-  ⬡ ${prefix}kick @user
-  ⬡ ${prefix}promote @user
-  ⬡ ${prefix}demote @user
+  ⬡ ${prefix}добавить @user
+  ⬡ ${prefix}удалить @user
+  ⬡ ${prefix}содействовать @user
+  ⬡ ${prefix}понизить @user
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3309,7 +3309,7 @@ case 'nocategorymenu': {
   ⬡ ${prefix}owner
   ⬡ ${prefix}donate
   ⬡ ${prefix}menu / ${prefix}help / ${prefix}?
-  ⬡ ${prefix}delete
+  ⬡ ${prefix}удалить
   ⬡ ${prefix}chatinfo
   ⬡ ${prefix}quoted
   ⬡ ${prefix}listpc
@@ -3516,8 +3516,8 @@ break
 ║ GRUPO :
 ║╭——————————
 ║├⬡ ${prefix}grupo
-║├⬡ ${prefix}promote 
-║├⬡ ${prefix}demote
+║├⬡ ${prefix}содействовать 
+║├⬡ ${prefix}понизить
 ║├⬡ ${prefix}grouplink
 ║├⬡ ${prefix}ephemeral [option]
 ║├⬡ ${prefix}setgrouppp
@@ -3525,11 +3525,11 @@ break
 ║├⬡ ${prefix}group [option]
 ║├⬡ ${prefix}editinfo [option]
 ║├⬡ ${prefix}grupinfo
-║├⬡ ${prefix}add @user
-║├⬡ ${prefix}kick @user
-║├⬡ ${prefix}promote @user
-║├⬡ ${prefix}demote @user
-║├⬡ ${prefix}tagall
+║├⬡ ${prefix}добавить @user
+║├⬡ ${prefix}удалить @user
+║├⬡ ${prefix}содействовать @user
+║├⬡ ${prefix}понизить @user
+║├⬡ ${prefix}внимание
 ║╰┬> CONVERTIDORES :
 ║╭╯
 ║├⬡ ${prefix}toimage
@@ -3559,7 +3559,7 @@ break
 ║├⬡ ${prefix}hidetag
 ║├⬡ ${prefix}contag
 ║├⬡ ${prefix}sticktag
-║├⬡ ${prefix}tagall
+║├⬡ ${prefix}внимание
 ║╰┬> RANDOM MENU  :
 ║╭╯
 ║├⬡ ${prefix}coffee
@@ -3608,7 +3608,7 @@ break
 ║├⬡ ${prefix}owner
 ║├⬡ ${prefix}donate
 ║├⬡ ${prefix}menu / help / ?
-║├⬡ ${prefix}delete
+║├⬡ ${prefix}удалить
 ║├⬡ ${prefix}chatinfo
 ║├⬡ ${prefix}quoted
 ║├⬡ ${prefix}listpc

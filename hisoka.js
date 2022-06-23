@@ -146,7 +146,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
-        m.reply(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
+        m.reply(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di удалить !`)
         if (!isBotAdmins) return m.reply(`Ehh bot gak admin T_T`)
         let gclink = (`https://chat.whatsapp.com/`+await hisoka.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
@@ -757,7 +757,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
           m.reply(`Exif berhasil diubah menjadi\n\n⭔ Packname : ${global.packname}\n⭔ Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'удалить': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -765,7 +765,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 		await hisoka.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'добавить': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -773,20 +773,20 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 		await hisoka.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'promote': {
+	case 'содействовать': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await hisoka.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		await hisoka.groupParticipantsUpdate(m.chat, [users], 'содействовать').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'demote': {
+	case 'понизить': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await hisoka.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		await hisoka.groupParticipantsUpdate(m.chat, [users], 'понизить').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
         case 'block': {
@@ -838,7 +838,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(mess.success)
                 }
                 break
-            case 'tagall': {
+            case 'внимание': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1034,10 +1034,10 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 `
 hisoka.sendTextWithMentions(m.chat, teks_vote, m)
 break
-		case 'deletevote': case'delvote': case 'hapusvote': {
+		case 'удалитьvote': case'delvote': case 'hapusvote': {
             if (!m.isGroup) throw mess.group
             if (!(m.chat in vote)) throw `_*tidak ada voting digrup ini!*_\n\n*${prefix}vote* - untuk memulai vote`
-            delete vote[m.chat]
+            удалить vote[m.chat]
             m.reply('Berhasil Menghapus Sesi Vote Di Grup Ini')
 	    }
             break
@@ -1154,11 +1154,11 @@ break
                 }
             }
             break
-            case 'delete': case 'del': {
+            case 'удалить': case 'del': {
                 if (!m.quoted) throw false
                 let { chat, fromMe, id, isBaileys } = m.quoted
                 if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
-                hisoka.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
+                hisoka.sendMessage(m.chat, { удалить: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
             }
             break
             case 'bcgc': case 'bcgroup': {
@@ -1289,7 +1289,7 @@ break
                     hisoka.sendText(m.chat, 'List Online:\n\n' + online.map(v => '⭔ @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
-            case 'sticker': case 's': case 'stickergif': case 'sgif': {
+            case 'стикер': case 's': case 'stickergif': case 'sgif': {
             if (!quoted) throw `Balas Video/Image Dengan Caption ${prefix + command}`
             m.reply(mess.wait)
                     if (/image/.test(mime)) {
@@ -1367,7 +1367,7 @@ break
          }
          break
 	       case 'smeme': case 'stickmeme': case 'stikmeme': case 'stickermeme': case 'stikermeme': {
-	        let respond = `Kirim/reply image/sticker dengan caption ${prefix + command} text1|text2`
+	        let respond = `Kirim/reply image/стикер dengan caption ${prefix + command} text1|text2`
 	        if (!/image/.test(mime)) throw respond
             if (!text) throw respond
 	        m.reply(mess.wait)
@@ -1389,7 +1389,7 @@ break
             break
             case 'toimage': case 'toimg': {
                 if (!quoted) throw 'Reply Image'
-                if (!/webp/.test(mime)) throw `Balas sticker dengan caption *${prefix + command}*`
+                if (!/webp/.test(mime)) throw `Balas стикер dengan caption *${prefix + command}*`
                 m.reply(mess.wait)
                 let media = await hisoka.downloadAndSaveMediaMessage(quoted)
                 let ran = await getRandom('.png')
@@ -2795,15 +2795,15 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}setdesc [text]
 │⭔ ${prefix}group [option]
 │⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
+│⭔ ${prefix}добавить @user
+│⭔ ${prefix}удалить @user
 │⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
+│⭔ ${prefix}внимание [text]
 │⭔ ${prefix}totag [reply]
 │⭔ ${prefix}antilink [on/off]
 │⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
+│⭔ ${prefix}содействовать @user
+│⭔ ${prefix}понизить @user
 │⭔ ${prefix}vote [text]
 │⭔ ${prefix}devote
 │⭔ ${prefix}upvote
@@ -3010,7 +3010,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}ttp
 │⭔ ${prefix}toimage
 │⭔ ${prefix}removebg
-│⭔ ${prefix}sticker
+│⭔ ${prefix}стикер
 │⭔ ${prefix}stickerwm
 │⭔ ${prefix}emojimix
 │⭔ ${prefix}emojimix2
@@ -3032,7 +3032,7 @@ let capt = `⭔ Title: ${judul}
 │⭔ ${prefix}ping
 │⭔ ${prefix}owner
 │⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete
+│⭔ ${prefix}удалить
 │⭔ ${prefix}infochat
 │⭔ ${prefix}quoted
 │⭔ ${prefix}listpc

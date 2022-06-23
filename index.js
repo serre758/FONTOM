@@ -316,7 +316,7 @@ I'm not sure if it was a goodbye charm, but it was fun while it lasted` })
             buffer = await imageToWebp(buff)
         }
 
-        await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await XeonBotInc.sendMessage(jid, { стикер: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 
@@ -337,7 +337,7 @@ I'm not sure if it was a goodbye charm, but it was fun while it lasted` })
             buffer = await videoToWebp(buff)
         }
 
-        await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
+        await XeonBotInc.sendMessage(jid, { стикер: { url: buffer }, ...options }, { quoted })
         return buffer
     }
 	
@@ -400,7 +400,7 @@ I'm not sure if it was a goodbye charm, but it was fun while it lasted` })
         let media = { mimetype: mime, data }
         pathFile = await writeExif(media, { packname: options.packname ? options.packname : global.packname, author: options.author ? options.author : global.author, categories: options.categories ? options.categories : [] })
         await fs.promises.unlink(filename)
-        type = 'sticker'
+        type = 'стикер'
         mimetype = 'image/webp'
         }
        else if (/image/.test(mime)) type = 'image'
