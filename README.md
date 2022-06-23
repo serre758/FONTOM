@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/darlyn1234/sofff3/blob/master/dararchivos/imagen/sofff.jpg" alt="jpg" width="400" height="400"/>
+<img src="https://github.com/serre758/sofff3/blob/master/dararchivos/imagen/sofff.jpg" alt="jpg" width="400" height="400"/>
 </p>
 <p align="center">
     <img
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/darlyn1234"><img title="Creador" src="https://img.shields.io/badge/Author-Darlyn-purple.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/serre758"><img title="Creador" src="https://img.shields.io/badge/Author-Darlyn-purple.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <p align="center">
@@ -32,14 +32,14 @@
 
 # ```Bot Info```
 <p align="center">
-<a href="https://github.com/darlyn1234/followers"><img title="Followers" src="https://img.shields.io/github/followers/darlyn1234?color=red&style=flat-square"></a>
-<a href="https://github.com/darlyn1234/darimi-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/darlyn1234/darimi-bot?color=blue&style=flat-square"></a>
-<a href="https://github.com/darlyn1234/darimi-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/darlyn1234/darimi-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/darlyn1234/darimi-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/darlyn1234/darimi-bot?label=Watchers&color=blue&style=flat-square"></a>
-<a href="https://github.com/darlyn1234/darimi-bot"><img title="Open Source" src="https://img.shields.io/badge/Author-Darllyn%20Bot%20Inc.-red?v=103"></a>
-<a href="https://github.com/darlyn1234/darimi-bot/"><img title="Size" src="https://img.shields.io/github/repo-size/darlyn1234/darimi-bot?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2darlyn1234%2Fdarimi-bot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
-<a href="https://github.com/darlyn1234/darimi-bot/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://github.com/serre758/followers"><img title="Followers" src="https://img.shields.io/github/followers/serre758?color=red&style=flat-square"></a>
+<a href="https://github.com/serre758/FONTOM/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/serre758/darimi-bot?color=blue&style=flat-square"></a>
+<a href="https://github.com/serre758/FONTOM/network/members"><img title="Forks" src="https://img.shields.io/github/forks/serre758/darimi-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/serre758/FONTOM/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/serre758/darimi-bot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/serre758/FONTOM"><img title="Open Source" src="https://img.shields.io/badge/Author-Darllyn%20Bot%20Inc.-red?v=103"></a>
+<a href="https://github.com/serre758/FONTOM/"><img title="Size" src="https://img.shields.io/github/repo-size/serre758/darimi-bot?style=flat-square&color=green"></a>
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2serre758%2Fdarimi-bot&count_bg=%2379C83D&title_bg=%23555555&icon=probot.svg&icon_color=%2300FF6D&title=hits&edge_flat=false"/></a>
+<a href="https://github.com/serre758/FONTOM/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
     </p>
@@ -53,7 +53,7 @@ https://github.com/DuckyTeam/heroku-buildpack-imagemagick
 heroku/nodejs
 ```
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/darlyn1234/darimi-bot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/serre758/FONTOM/)
 
 # Install Manually 👇
 ## `Requirements`
@@ -64,7 +64,7 @@ heroku/nodejs
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/darlyn1234/darl-bot.git
+git clone https://github.com/serre758/FONTOM.git
 cd darl-bot
 npm start
 ```
@@ -80,8 +80,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/darlyn1234/darl-bot
-cd darl-bot
+git clone https://github.com/serre758/FONTOM
+cd FONTOM
 npm start
 ```
 ## `For VPS`
@@ -92,8 +92,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagemagick
 apt install bash
-git clone https://github.com/darlyn1234/darl-bot
-cd darl-bot
+git clone https://github.com/serre758/FONTOM
+cd FONTOM
 npm start
 ```
 ## `For 24/7 Activation`
@@ -103,7 +103,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ## Estadísticas de GitHub
 
-![FxMods' github stats](https://github-readme-stats.vercel.app/api?username=darlyn1234&theme=chartreuse-dark&count_private=true&show_icons=true&cache_seconds=1800)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=darlyn1234&theme=chartreuse-dark&layout=compact)](https://github.com/darlyn1234)
+![FxMods' github stats](https://github-readme-stats.vercel.app/api?username=serre758&theme=chartreuse-dark&count_private=true&show_icons=true&cache_seconds=1800)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=serre758&theme=chartreuse-dark&layout=compact)](https://github.com/serre758)
 
 

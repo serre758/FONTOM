@@ -602,7 +602,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
             break
             case 'sc': 
 	    case 'script': {
-            reply('Script : https://github.com/darlyn1234/darimi-bot\nDont Forget, dont Forget To Subscribe')
+            reply('Script : https://github.com/serre758/FONTOM\nDont Forget, dont Forget To Subscribe')
             }
             break
             case 'chat': {
