@@ -1,47 +1,47 @@
-//═══════[© 2022 Darlyn Bot Inc.]════════\\
-
-//═══════[modules]════════\\
+/**
+   * Create By Dika Ardnt.
+   * Contact Me on wa.me/+79054731060
+   * Follow https://github.com
+*/
 
 const fs = require('fs')
 const chalk = require('chalk')
 
-//═══════[api website]════════\\
+// Website Api
 global.APIs = {
-	zenz: 'https://zenzapi.xyz', //credit zenz, thank you so much bro <3
-}
-//═══════[api key of the website]════════\\
-global.APIKeys = {
-	'https://zenzapi.xyz': '805a6c3fa9', //thank you to zenz
+	zenz: 'https://zenzapis.xyz',
 }
 
-//═══════[modification]════════\\
-global.owner = ['79054731060','79054731060'] //owner number, u can put multiple owner number, within quotations and seperated by comma.
-global.pemilik = ['79054731060'] //another owner number
-global.premium = ['79054731060'] //premium number
-global.pengguna = 'Darlyn' //username
-global.botnma = '<div> 𝑆𝑜𝑓𝑓𝑓 </div>' //bot name
-global.ownernma = 'Darlyn' //owner name
-global.packname = '->' //sticker package name
-global.author = 'Darlyn | ≛ ⃝🧋•𝑫𝒂𝒓𝒍𝒚𝒏⸙𔘓ৎ୭🩹៸៸◗ ⋆ 🪜 ⏜⃞ჩ ♞ ᵈᵃʳˡʸⁿ — 𖦹࣪ᰍ\nhttps://appweb-darlyn.vercel.app𓈃ּ ៹🍏𝗱𝑎𝙧̲𝘭𝐲̲𝘯̲𐂂!s⁹⁷☻‹𝟹' //sticker author name |#⃞＠𝑫𝒂𝒓𝒍𝒚𝒏•𝒎𝒂𝒋𝒐✞𔘓 𒈔⃟🍂𝑫𝒂𝒓𝒍𝒚𝒏🍁⃟𒈔 
-global.sessionName = 'session' //session name
-global.prefa = ['#','!','/',''] //prefix
-global.sp = '⭔' //design
+// Apikey Website Api
+global.APIKeys = {
+	'https://zenzapis.xyz': '192e24e3a9b2',
+}
+
+// Other
+global.owner = ['79054731060','79054731060','79054731060']
+global.premium = ['79054731060']
+global.packname = 'FONTOM'
+global.author = 'WhatsApp Bot'
+global.sessionName = 'hisoka'
+global.prefa = ['','!','.','🐦','🐤','🗿']
+global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: '¡Esta función es solo para administradores!',
-    botAdmin: '¡El bot debe ser administrador primero!',
-    owner: 'Esta función es solo para el propietario/owner',
-    group: '¡Función utilizada solo para grupos!',
-    private: '¡Características utilizadas solo para chat privado!',
-    bot: 'Esta característica es solo para el número de bot',
-    wait: 'En proceso, por favor espera...',
-    endLimit: 'Su límite diario ha expirado, el límite se restablecerá cada 12 horas',
+    success: '✓ Success',
+    admin: 'Fitur Khusus Admin Group!',
+    botAdmin: 'Bot Harus Menjadi Admin Terlebih Dahulu!',
+    owner: 'Fitur Khusus Owner Bot',
+    group: 'Fitur Digunakan Hanya Untuk Group!',
+    private: 'Fitur Digunakan Hanya Untuk Private Chat!',
+    bot: 'Fitur Khusus Pengguna Nomor Bot',
+    wait: 'Loading...',
+    endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
 }
 global.limitawal = {
-    premium: "Infinity", //premium user limit
-    free: 100 //free user limit
+    premium: "Infinity",
+    free: 100
 }
-global.thumb = fs.readFileSync('./XeonMedia/cheemspic.jpg')
+global.thumb = fs.readFileSync('./lib/hisoka.jpg')
+global.visoka = { url: 'https://telegra.ph/file/15209657f9d4f59c7ca1e.mp4' }
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
