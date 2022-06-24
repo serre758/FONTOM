@@ -815,7 +815,7 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'добавить': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -824,22 +824,22 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'добавить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'содействовать': {
+	case 'promote': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'содействовать').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'понизить': {
+	case 'demote': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'понизить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
         case 'block': {
@@ -854,7 +854,7 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	    case 'заданное имя': 
+	    case 'setname': 
 		case 'setsubject': {
 			 if (!isCreator) throw mess.owner
                 if (!m.isGroup) throw mess.group
@@ -885,7 +885,7 @@ Ciee Whats Going On💖👀`
                 }
                 break
            case 'setppgroup': 
-		case 'установить группу': 
+		case 'setgrouppp': 
 		case 'setgcpp': 
 		case 'setppgrup':
 		case 'setppgc': {
@@ -899,7 +899,7 @@ Ciee Whats Going On💖👀`
                 reply(mess.success)
                 }
                 break
-case 'инфогрупп':
+case 'grupinfo':
 case 'groupinfo':
 		case 'infogp':
 try{
@@ -1127,7 +1127,7 @@ break
              }
             }
             break
-            case 'инфоредактор': {
+            case 'editinfo': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1137,15 +1137,15 @@ break
                 await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Close Edit Group Info`)).catch((err) => reply(jsonformat(err)))
              } else {
              let buttons = [
-                        { buttonId: 'инфоредактор open', buttonText: { displayText: '⭕Open⭕' }, type: 1 },
-                        { buttonId: 'инфоредактор close', buttonText: { displayText: '🚫Close🚫' }, type: 1 }
+                        { buttonId: 'editinfo open', buttonText: { displayText: '⭕Open⭕' }, type: 1 },
+                        { buttonId: 'editinfo close', buttonText: { displayText: '🚫Close🚫' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `Mode Edit Info`, XeonBotInc.user.name, m)
 
             }
             }
             break
-case 'антиссылка':
+case 'antilink':
 	        if (!m.isGroup) return reply(`This feature only be used in group`)
 			if (!isAdmins) return reply(`This feature could be used by admin only`)
 			if (!isBotAdmins) return reply(`Bot must be admin first`)
@@ -1160,12 +1160,12 @@ case 'антиссылка':
 						var ini = antilink.indexOf(m.chat)
 						antilink.splice(ini, 1)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-						reply('Successfully disabled антиссылка feature')
+						reply('Successfully disabled antilink feature')
 					} else if (!q){
- reply(`Pilih антиссылка вкл / выкл `)
+ reply(`Pilih Antilink On / Off `)
 					}
 					break 
-					case 'анти2': {
+					case 'antiwame': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1179,19 +1179,19 @@ case 'антиссылка':
                 m.reply(`Anti Wa.me is not activated!`)
                 } else {
                  let buttons = [
-                        { buttonId: 'анти2 вкл', buttonText: { displayText: '⭕On⭕' }, type: 1 },
-                        { buttonId: 'анти2 выкл', buttonText: { displayText: '❌Off❌' }, type: 1 }
+                        { buttonId: 'antiwame on', buttonText: { displayText: '⭕On⭕' }, type: 1 },
+                        { buttonId: 'antiwame off', buttonText: { displayText: '❌Off❌' }, type: 1 }
                     ]
                     await XeonBotInc.sendButtonText(m.chat, buttons, `Mode Anti Wa.me`, XeonBotInc.user.name, m)
                 }
              }
              break
-					   case 'беззвучный':
+					   case 'mute':
                            case 'banchat': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins) throw mess.admin
                 if (args[0] === "on") {
-                if (db.chats[m.chat].беззвучный) return reply(`Already activated`)
+                if (db.chats[m.chat].mute) return reply(`Already activated`)
                 db.chats[m.chat].mute = true
                 reply(`${XeonBotInc.user.name} has been muted in this group !`)
                 } else if (args[0] === "off") {
@@ -1208,7 +1208,7 @@ case 'антиссылка':
              }
              break
             case 'linkgroup': 
-            case 'групповая ссылка':
+            case 'grouplink':
              case 'gclink': 
              case 'linkgc': {
                 if (!m.isGroup) throw mess.group
@@ -1216,11 +1216,11 @@ case 'антиссылка':
                 XeonBotInc.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nLink of: ${groupMetadata.subject} Group`, m, { detectLink: true })
             }
             break
-            case 'эфемерный': {
+            case 'ephemeral': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-                if (!text) throw 'Enter the enable/disable value, For Example ${prefix}эфемерный enable'
+                if (!text) throw 'Enter the enable/disable value, For Example ${prefix}ephemeral enable'
                 if (args[0] === 'enable') {
                     await XeonBotInc.sendMessage(m.chat, { disappearingMessagesInChat: WA_DEFAULT_EPHEMERAL }).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                 } else if (args[0] === 'disable') {
@@ -2952,17 +2952,17 @@ case 'grupmenu': {
 anu = `
   *Group Menu*
   
-  ⬡ ${prefix}групповая ссылка
-  ⬡ ${prefix}эфемерный [option]
-  ⬡ ${prefix}установить группу
-  ⬡ ${prefix}заданное имя [text]
+  ⬡ ${prefix}grouplink
+  ⬡ ${prefix}ephemeral [option]
+  ⬡ ${prefix}setgrouppp
+  ⬡ ${prefix}setname [text]
   ⬡ ${prefix}group [option]
-  ⬡ ${prefix}инфоредактор [option]
-  ⬡ ${prefix}инфогрупп
+  ⬡ ${prefix}editinfo [option]
+  ⬡ ${prefix}grupinfo
   ⬡ ${prefix}добавить @user
   ⬡ ${prefix}удалить @user
-  ⬡ ${prefix}содействовать @user
-  ⬡ ${prefix}понизить @user
+  ⬡ ${prefix}promote @user
+  ⬡ ${prefix}demote @user
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3414,9 +3414,9 @@ case 'sistemmenu': {
 	anu = `
 	*System Menu*
 	
-  ⬡ ${prefix}антиссылка вкл/выкл
-  ⬡ ${prefix}беззвучный On/Off
-  ⬡ ${prefix}анти2 вкл/выкл
+  ⬡ ${prefix}antilink On/Off
+  ⬡ ${prefix}mute On/Off
+  ⬡ ${prefix}antiwame On/Off
 `
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3513,22 +3513,22 @@ break
 ║╰——————————
 ╚═══════════
 ╔═══════════
-║ группа :
+║ GRUPO :
 ║╭——————————
-║├⬡ ${prefix}группа
-║├⬡ ${prefix}содействовать 
-║├⬡ ${prefix}понизить
-║├⬡ ${prefix}групповая ссылка
-║├⬡ ${prefix}эфемерный [option]
-║├⬡ ${prefix}установить группу
-║├⬡ ${prefix}заданное имя [text]
+║├⬡ ${prefix}grupo
+║├⬡ ${prefix}promote 
+║├⬡ ${prefix}demote
+║├⬡ ${prefix}grouplink
+║├⬡ ${prefix}ephemeral [option]
+║├⬡ ${prefix}setgrouppp
+║├⬡ ${prefix}setname [text]
 ║├⬡ ${prefix}group [option]
-║├⬡ ${prefix}инфоредактор [option]
-║├⬡ ${prefix}инфогрупп
+║├⬡ ${prefix}editinfo [option]
+║├⬡ ${prefix}grupinfo
 ║├⬡ ${prefix}добавить @user
 ║├⬡ ${prefix}удалить @user
-║├⬡ ${prefix}содействовать @user
-║├⬡ ${prefix}понизить @user
+║├⬡ ${prefix}promote @user
+║├⬡ ${prefix}demote @user
 ║├⬡ ${prefix}внимание
 ║╰┬> CONVERTIDORES :
 ║╭╯
@@ -3626,9 +3626,9 @@ break
 ║├⬡ ${prefix}delmsg
 ║╰┬> ANTIMENU :
 ║╭╯
-║├⬡ ${prefix}антиссылка [вкл/выкл]
-║├⬡ ${prefix}беззвучный [on/off]
-║├⬡ ${prefix}анти2 [вкл/выкл]
+║├⬡ ${prefix}antilink [on/off]
+║├⬡ ${prefix}mute [on/off]
+║├⬡ ${prefix}antiwame [on/off]
 ║╰——————————
 ╚═══════════`
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
