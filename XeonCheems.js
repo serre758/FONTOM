@@ -34,7 +34,7 @@ const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'))
 // [database reader] \\
 global.db = JSON.parse(fs.readFileSync('./src/database.json'))
 if (global.db) global.db = {
-    стикер: {},
+    sticker: {},
     database: {},
     game: {},
     others: {},
@@ -170,7 +170,7 @@ const levelRole = getLevelingLevel(m.sender)
 	if (isAntiLink) 
 if (budy.includes('https://chat.whatsapp.com/')) {
                if (!m.key.fromMe) {
-               reply('*LINK DETECTED*\nWow, how naughty, this группаhas been installed with Antilink, OK?..,\nGood Bye To You..👋🏻')
+               reply('*LINK DETECTED*\nWow, how naughty, this group has been installed with Antilink, OK?..,\nGood Bye To You..👋🏻')
                let sianj = m.sender
                await XeonBotInc.groupParticipantsUpdate(m.chat, [sianj], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
                }
@@ -792,7 +792,7 @@ Ciee Whats Going On💖👀`
             }
             break
             case 'join': {
-                if (!text) throw 'Enter the группаlink!'
+                if (!text) throw 'Enter the group link!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 replay(mess.wait)
                 let result = args[0].split('https://chat.whatsapp.com/')[1]
@@ -842,16 +842,16 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'блок': {
+        case 'block': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateблокStatus(users, 'блок').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'разблокировать': {
+        case 'unblock': {
 		if (!isCreator) throw mess.owner
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.updateблокStatus(users, 'разблокировать').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	    case 'setname': 
@@ -874,7 +874,7 @@ Ciee Whats Going On💖👀`
             }
             break
           case 'setppbot': 
-		case 'установить': {
+		case 'setbotpp': {
                 if (!isCreator) throw mess.owner
                 if (!quoted) throw `Send/Reply Image With Caption ${prefix + command}`
                 if (!/image/.test(mime)) throw `Send/Reply Image With Caption ${prefix + command}`
@@ -907,7 +907,7 @@ try{
   } catch {
  var pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
   }
-let ingfo = `*G R O U P  I N F O*\n\n*Name :* ${groupName}\n*ID группа:* ${m.chat}\n*Made :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n*группаOwner:* @${groupMetadata.owner.split('@')[0]}\n*Number Of Admins :* ${groupAdmins.length}\n*Number Of Participants :* ${participants.length}\n*Desc :* \n${groupMetadata.desc}`
+let ingfo = `*G R O U P  I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${m.chat}\n*Made :* ${moment(`${groupMetadata.creation}` * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n*Group Owner:* @${groupMetadata.owner.split('@')[0]}\n*Number Of Admins :* ${groupAdmins.length}\n*Number Of Participants :* ${participants.length}\n*Desc :* \n${groupMetadata.desc}`
 ds = await getBuffer(pic)
 XeonBotInc.sendMessage(m.chat, { image: ds,caption: ingfo, mentions: [groupMetadata.owner] }, { quoted: m})
 break
@@ -1119,10 +1119,10 @@ break
                     await XeonBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
-                        { buttonId: 'группаopen', buttonText: { displayText: '⭕Open⭕' }, type: 1 },
-                        { buttonId: 'группаclose', buttonText: { displayText: '🚫Close🚫' }, type: 1 }
+                        { buttonId: 'group open', buttonText: { displayText: '⭕Open⭕' }, type: 1 },
+                        { buttonId: 'group close', buttonText: { displayText: '🚫Close🚫' }, type: 1 }
                     ]
-                    await XeonBotInc.sendButtonText(m.chat, buttons, `группаMode`, XeonBotInc.user.name, m)
+                    await XeonBotInc.sendButtonText(m.chat, buttons, `Group Mode`, XeonBotInc.user.name, m)
 
              }
             }
@@ -1132,9 +1132,9 @@ break
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
              if (args[0] === 'open'){
-                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Edit группаInfo`)).catch((err) => reply(jsonformat(err)))
+                await XeonBotInc.groupSettingUpdate(m.chat, 'unlocked').then((res) => reply(`Successfully Opened Edit Group Info`)).catch((err) => reply(jsonformat(err)))
              } else if (args[0] === 'close'){
-                await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Close Edit группаInfo`)).catch((err) => reply(jsonformat(err)))
+                await XeonBotInc.groupSettingUpdate(m.chat, 'locked').then((res) => reply(`Successfully Close Edit Group Info`)).catch((err) => reply(jsonformat(err)))
              } else {
              let buttons = [
                         { buttonId: 'editinfo open', buttonText: { displayText: '⭕Open⭕' }, type: 1 },
@@ -1154,7 +1154,7 @@ case 'antilink':
 						antilink.push(m.chat)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('Successfully activated the antilink feature')
-						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This группаhas been installed anti-link\nIf you violate then I will удалить`})
+						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This group has been installed anti-link\nIf you violate then I will удалить`})
 					} else if (args[0] === 'off') {
 						if (!isAntiLink) return reply('already deactivated')
 						var ini = antilink.indexOf(m.chat)
@@ -1193,7 +1193,7 @@ case 'antilink':
                 if (args[0] === "on") {
                 if (db.chats[m.chat].mute) return reply(`Already activated`)
                 db.chats[m.chat].mute = true
-                reply(`${XeonBotInc.user.name} has been muted in this группа!`)
+                reply(`${XeonBotInc.user.name} has been muted in this group !`)
                 } else if (args[0] === "off") {
                 if (!db.chats[m.chat].mute) return reply(`Already deactivated`)
                 db.chats[m.chat].mute = false
@@ -1238,13 +1238,13 @@ case 'antilink':
             }
             break
             case 'bcgc': 
-            case 'группа 1': {
+            case 'bcgroup': {
                 if (!isCreator) throw mess.owner
                 if (!text) throw `Where is the text?\n\nExample : ${prefix + command} hello guys, am back`
                 let getGroups = await XeonBotInc.groupFetchAllParticipating()
                 let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
                 let anu = groups.map(v => v.id)
-                reply(`Send Broadcast To ${anu.length} группаChat, Finish Time ${anu.length * 1.5} second`)
+                reply(`Send Broadcast To ${anu.length} Group Chat, Finish Time ${anu.length * 1.5} second`)
                 for (let i of anu) {
                     await sleep(1500)
                     let btn = [{
@@ -1282,7 +1282,7 @@ case 'antilink':
             break
             case 'bc': 
             case 'broadcast': 
-            case 'вызвать': {
+            case 'bcall': {
                 if (!isCreator) throw mess.owner
                 if (!text) throw `Where is the text?\n\nExample : ${prefix + command} Darlyn bot here`
                 let anu = await store.chats.all().map(v => v.id)
@@ -1345,7 +1345,7 @@ case 'antilink':
 		        case 'listgp':
                 case 'listgroup':{
                  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
-                 let teks = `⬣ *группаCHAT LIST*\n\nTotal группа: ${anu.length} Group\n\n`
+                 let teks = `⬣ *GROUP CHAT LIST*\n\nTotal Group : ${anu.length} Group\n\n`
                  for (let i of anu) {
                      let metadata = await XeonBotInc.groupMetadata(i)
                      teks += `⬡ *Name :* ${metadata.subject}\n⬡ *Owner :* @${metadata.owner.split('@')[0]}\n⬡ *ID :* ${metadata.id}\n⬡ *Made :* ${moment(metadata.creation * 1000).tz('Asia/Kolkata').format('DD/MM/YYYY HH:mm:ss')}\n⬡ *Member :* ${metadata.participants.length}\n\n────────────────────────\n\n`
@@ -1362,9 +1362,9 @@ case 'antilink':
              }
              break
 		case 'stiker':
-            case 'стикер': 
+            case 'sticker': 
             case 's': 
-            case 'стикергиф':
+            case 'stickergif':
              case 'sgif':
                  case 'dar':
                      case 'sofff': {
@@ -1694,14 +1694,14 @@ message = await prepareWAMessageMedia({ image : { url: anu.thumbnail } }, { uplo
                 XeonBotInc.sendMessage(m.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: m })
             }
 	    break
-            case 'кофе': 
+            case 'coffee': 
 		case 'kopi': {
             let buttons = [
                     {buttonId: `coffe`, buttonText: {displayText: '➡️Next Image➡️'}, type: 1}
                 ]
                 let buttonMessage = {
-                    image: { url: 'https://кофе.alexflipnote.dev/random' },
-                    caption: `☕Random кофе☕`,
+                    image: { url: 'https://coffee.alexflipnote.dev/random' },
+                    caption: `☕Random Coffee☕`,
                     footer: XeonBotInc.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2710,10 +2710,10 @@ case 'darlyn':
                     case 'bug': 
                     case 'report':
 		case 'reportar': {
-                    	if(!text) throw `Enter The Bug Example\n\n${command} меню Error `
+                    	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
                     	XeonBotInc.sendMessage(`79054731060@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
-reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be блокed For Sure !`)
+reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break 
 case 'tes':
@@ -2749,7 +2749,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             }, {
                                 quickReplyButton: {
                                     displayText: '🍇All Menu🍇',
-                                    id: `${prefix}все меню`
+                                    id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -2769,7 +2769,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
 break
 case 'list':
-case 'меню': 
+case 'menu': 
 case 'help':{
 timestampe = speed();
 latensie = speed() - timestampe
@@ -2812,7 +2812,7 @@ hydratedFooterText: `╭═〘८≛ 𝓓𝓪𝓻𝓵𝔂𝓷 𔐬☆᤻᤻[𝓼
                             }, {
                                 quickReplyButton: {
                                     displayText: '🍇All Menu🍇',
-                                    id: `${prefix}все меню`
+                                    id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -2837,17 +2837,17 @@ case 'cajon':{
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
-                    description: `Please Choose The меню\nWeb: https://appweb-darlyn.vercel.app\n\n`,
-                    buttonText: "меню",
+                    description: `Please Choose The Menu\nWeb: https://appweb-darlyn.vercel.app\n\n`,
+                    buttonText: "Menu",
                     footerText: "© Darlyn",
                     listType: "SINGLE_SELECT",
                     sections: [{
-								"title": "группаFeatures",
+								"title": "Group Features",
 								"rows": [
 									{
-										"title": "группаменю",
-										"description": "Displays The List Of группаFeatures",
-										"rowId": `${prefix}группа меню`
+										"title": "Group Menu",
+										"description": "Displays The List Of Group Features",
+										"rowId": `${prefix}grupmenu`
 									}
 								]
 							},
@@ -2857,7 +2857,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 									{
 										"title": "All Menu",
 										"description": "Muestra la lista de todas los comandos!",
-										"rowId": `${prefix}все меню`
+										"rowId": `${prefix}allmenu`
 									},
 									{
 										"title": "Download Menu",
@@ -2912,11 +2912,11 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 								]
 							},
 							{
-								"title": "группаSystem",
+								"title": "Group System",
 								"rows": [
 									{
 										"title": "System Menu",
-										"description": "Displays The List Of группаSystem Features",
+										"description": "Displays The List Of Group System Features",
 										"rowId": `${prefix}sistemmenu`
 									}
 								]
@@ -2948,15 +2948,15 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
             break
-case 'группа меню': {
+case 'grupmenu': {
 anu = `
-  *группаMenu*
+  *Group Menu*
   
   ⬡ ${prefix}grouplink
   ⬡ ${prefix}ephemeral [option]
   ⬡ ${prefix}setgrouppp
   ⬡ ${prefix}setname [text]
-  ⬡ ${prefix}группа [option]
+  ⬡ ${prefix}group [option]
   ⬡ ${prefix}editinfo [option]
   ⬡ ${prefix}grupinfo
   ⬡ ${prefix}добавить @user
@@ -3071,7 +3071,7 @@ case 'randommenu': {
 	anu = `
 	*Random Menu*
   
-  ⬡ ${prefix}кофе
+  ⬡ ${prefix}coffee
   ⬡ ${prefix}couplepp
   `
   const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -3449,11 +3449,11 @@ break
   ⬡ ${prefix}chat [option]
   ⬡ ${prefix}join [link]
   ⬡ ${prefix}leave
-  ⬡ ${prefix}установить
-  ⬡ ${prefix}блок @user
-  ⬡ ${prefix}разблокировать @user
-  ⬡ ${prefix}группа 1
-  ⬡ ${prefix}вызвать
+  ⬡ ${prefix}setbotpp
+  ⬡ ${prefix}block @user
+  ⬡ ${prefix}unblock @user
+  ⬡ ${prefix}bcgroup
+  ⬡ ${prefix}bcall
   `
     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
@@ -3479,7 +3479,7 @@ break
                 XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
             }
 break
-  case 'все меню':
+  case 'allmenu':
       case 'all':
           case 'menuall': {
   	anu = `┏━━━━━━━━━━━━━━━━━━┓
@@ -3496,12 +3496,12 @@ break
 ║├⬡ ${prefix}chat [option]
 ║├⬡ ${prefix}join [link]
 ║├⬡ ${prefix}leave
-║├⬡ ${prefix}установить
-║├⬡ ${prefix}блок @user
-║├⬡ ${prefix}разблокировать @user
-║├⬡ ${prefix}группа 1
-║├⬡ ${prefix}вызвать
-║├⬡ ${prefix}модо
+║├⬡ ${prefix}setbotpp
+║├⬡ ${prefix}block @user
+║├⬡ ${prefix}unblock @user
+║├⬡ ${prefix}bcgroup
+║├⬡ ${prefix}bcall
+║├⬡ ${prefix}modo
 ║╰——————————
 ╚═══════════
 ╔═══════════
@@ -3509,7 +3509,7 @@ break
 ║╭——————————
 ║├⬡ ${prefix}couple
 ║├⬡ ${prefix}pareja
-║├⬡ ${prefix}кофе
+║├⬡ ${prefix}coffe
 ║╰——————————
 ╚═══════════
 ╔═══════════
@@ -3522,7 +3522,7 @@ break
 ║├⬡ ${prefix}ephemeral [option]
 ║├⬡ ${prefix}setgrouppp
 ║├⬡ ${prefix}setname [text]
-║├⬡ ${prefix}группа[option
+║├⬡ ${prefix}group [option]
 ║├⬡ ${prefix}editinfo [option]
 ║├⬡ ${prefix}grupinfo
 ║├⬡ ${prefix}добавить @user
@@ -3534,7 +3534,7 @@ break
 ║╭╯
 ║├⬡ ${prefix}toimage
 ║├⬡ ${prefix}removebg
-║├⬡ ${prefix}стикер
+║├⬡ ${prefix}sticker
 ║├⬡ ${prefix}emojimix
 ║├⬡ ${prefix}tovideo
 ║├⬡ ${prefix}tofig
@@ -3558,11 +3558,11 @@ break
 ║╭╯
 ║├⬡ ${prefix}hidetag
 ║├⬡ ${prefix}contag
-║├⬡ ${prefix}стиктэг
+║├⬡ ${prefix}sticktag
 ║├⬡ ${prefix}внимание
-║╰┬> RANDOM меню  :
+║╰┬> RANDOM MENU  :
 ║╭╯
-║├⬡ ${prefix}кофе
+║├⬡ ${prefix}coffee
 ║├⬡ ${prefix}couplepp
 ║├⬡ ${prefix}couple
 ║├⬡ ${prefix}mysoulmate
@@ -3602,12 +3602,12 @@ break
 ║├⬡ ${prefix}robot
 ║├⬡ ${prefix}slow
 ║├⬡ ${prefix}squirrel
-║╰┬> MISC меню :
+║╰┬> MISC MENU :
 ║╭╯
 ║├⬡ ${prefix}ping
 ║├⬡ ${prefix}owner
 ║├⬡ ${prefix}donate
-║├⬡ ${prefix}меню / help / ?
+║├⬡ ${prefix}menu / help / ?
 ║├⬡ ${prefix}delete
 ║├⬡ ${prefix}chatinfo
 ║├⬡ ${prefix}quoted
@@ -3615,7 +3615,7 @@ break
 ║├⬡ ${prefix}listgc
 ║├⬡ ${prefix}listonline
 ║├⬡ ${prefix}report (report bug to owner)
-║╰┬> DATABASE меню :
+║╰┬> DATABASE MENU :
 ║╭╯
 ║├⬡ ${prefix}setcmd
 ║├⬡ ${prefix}listcmd
@@ -3624,7 +3624,7 @@ break
 ║├⬡ ${prefix}listmsg
 ║├⬡ ${prefix}getmsg
 ║├⬡ ${prefix}delmsg
-║╰┬> ANTIменю :
+║╰┬> ANTIMENU :
 ║╭╯
 ║├⬡ ${prefix}antilink [on/off]
 ║├⬡ ${prefix}mute [on/off]
