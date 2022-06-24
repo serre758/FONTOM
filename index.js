@@ -77,11 +77,11 @@ async function startXeonBotInc() {
                     ppuser = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
 
-//═══════[get group dp]════════\\
+//═══════[get группаdp]════════\\
                 try {
-                    ppgroup = await XeonBotInc.profilePictureUrl(anu.id, 'image')
+                    ppгруппа= await XeonBotInc.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+                    ppгруппа= 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                 
 //═══════[welcome]════════\\
@@ -98,7 +98,7 @@ Description: ${metadata.desc}
 Welcome To Our Comfortable Happy, Sometimes Loud, Usually Messy, Full Of Love, HOME!!`} )
 } else if (anu.action == 'remove') {
 XeonBotInc.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `Salio : @${num.split("@")[0]} 
-Group : ${metadata.subject}
+группа: ${metadata.subject}
 I'm not sure if it was a goodbye charm, but it was fun while it lasted` })
                 }
             }
