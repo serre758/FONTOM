@@ -821,7 +821,7 @@ Ciee Whats Going On💖👀`
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'добавить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	case 'promote': {
@@ -911,11 +911,11 @@ let ingfo = `*G R O U P  I N F O*\n\n*Name :* ${groupName}\n*ID Group :* ${m.cha
 ds = await getBuffer(pic)
 XeonBotInc.sendMessage(m.chat, { image: ds,caption: ingfo, mentions: [groupMetadata.owner] }, { quoted: m})
 break
-            case 'tagall': case 'tag': {
+            case 'внимание': case 'tag': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 🍒 Tagall 🍒 〙✪══
+let teks = `══✪〘 🍒 внимание 🍒 〙✪══
  
  ➲ *Message : ${q ? q : 'blank'}*\n\n`
                 for (let mem of participants) {
@@ -1341,7 +1341,7 @@ case 'antilink':
              }
              break
                 case 'listgc': 
-                case 'listgrupos':
+                case 'listгруппаs':
 		        case 'listgp':
                 case 'listgroup':{
                  let anu = await store.chats.all().filter(v => v.id.endsWith('@g.us')).map(v => v.id)
@@ -3513,9 +3513,9 @@ break
 ║╰——————————
 ╚═══════════
 ╔═══════════
-║ GRUPO :
+║ группа :
 ║╭——————————
-║├⬡ ${prefix}grupo
+║├⬡ ${prefix}группа
 ║├⬡ ${prefix}promote 
 ║├⬡ ${prefix}demote
 ║├⬡ ${prefix}grouplink
@@ -3529,7 +3529,7 @@ break
 ║├⬡ ${prefix}удалить @user
 ║├⬡ ${prefix}promote @user
 ║├⬡ ${prefix}demote @user
-║├⬡ ${prefix}tagall
+║├⬡ ${prefix}внимание
 ║╰┬> CONVERTIDORES :
 ║╭╯
 ║├⬡ ${prefix}toimage
@@ -3559,7 +3559,7 @@ break
 ║├⬡ ${prefix}hidetag
 ║├⬡ ${prefix}contag
 ║├⬡ ${prefix}sticktag
-║├⬡ ${prefix}tagall
+║├⬡ ${prefix}внимание
 ║╰┬> RANDOM MENU  :
 ║╭╯
 ║├⬡ ${prefix}coffee
