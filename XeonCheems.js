@@ -597,7 +597,7 @@ Please @${m.mentionedJid[0].split`@`[0]} to type accept/reject`
         case 'sewa':
          case 'buypremium': 
          case 'donate': {
-                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/t35HfVx/ALONSOZING.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/51923513366 (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://i.ibb.co/t35HfVx/ALONSOZING.jpg\n⭔ Paytm : https://i.ibb.co/t35HfVx/ALONSOZING.jpg` }, { quoted: m })
+                XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/t35HfVx/ALONSOZING.jpg' }, caption: `*Hi bro ${m.pushName}*\n\n Bot Rental Price\n⭔ 250INR Per Group via Gpay/paytm/phonepe 1 Month\n\nFor more details, you can chat with the owner\nhttps://wa.me/79054731060 (Owner)\n\nDonate Me : \n\n⭔ Fampay : https://i.ibb.co/t35HfVx/ALONSOZING.jpg\n⭔ Paytm : https://i.ibb.co/t35HfVx/ALONSOZING.jpg` }, { quoted: m })
             }
             break
             case 'sc': 
@@ -806,7 +806,7 @@ Ciee Whats Going On💖👀`
                 await XeonBotInc.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-	case 'kick': {
+	case 'удалить': {
 		if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -815,13 +815,13 @@ Ciee Whats Going On💖👀`
 		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'добавить': {
 		 if (!isCreator) throw mess.owner
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
 		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await XeonBotInc.groupParticipantsUpdate(m.chat, [users], 'добавить').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	case 'promote': {
@@ -1154,7 +1154,7 @@ case 'antilink':
 						antilink.push(m.chat)
 						fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
 						reply('Successfully activated the antilink feature')
-						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This group has been installed anti-link\nIf you violate then I will kick`})
+						XeonBotInc.sendMessage(m.chat,  {text: `ALLERT!!! This group has been installed anti-link\nIf you violate then I will удалить`})
 					} else if (args[0] === 'off') {
 						if (!isAntiLink) return reply('already deactivated')
 						var ini = antilink.indexOf(m.chat)
@@ -2503,7 +2503,7 @@ View list of message with ${prefix}listmsg`)
 				let buttons = [{
                                 urlButton: {
                                     displayText: 'Report Bug🐛',
-                                    url: 'https://wa.me/51918303426?text=hello+bro+i+found+a+bug+in+your+bot'
+                                    url: 'https://wa.me/79054731060?text=hello+bro+i+found+a+bug+in+your+bot'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2711,7 +2711,7 @@ case 'darlyn':
                     case 'report':
 		case 'reportar': {
                     	if(!text) throw `Enter The Bug Example\n\n${command} Menu Error `
-                    	XeonBotInc.sendMessage(`51918303426@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	XeonBotInc.sendMessage(`79054731060@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
@@ -2739,7 +2739,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'wame📍',
-                                    url: 'https://api.whatsapp.com/send/?phone=51918303426&text=hola%20darlyn%20http://perro-animado-darlyn.web.app'
+                                    url: 'https://api.whatsapp.com/send/?phone=79054731060&text=hola%20darlyn%20http://perro-animado-darlyn.web.app'
                                 }
                             }, {
                             	urlButton: {
@@ -2802,7 +2802,7 @@ hydratedFooterText: `╭═〘८≛ 𝓓𝓪𝓻𝓵𝔂𝓷 𔐬☆᤻᤻[𝓼
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'wame📍',
-                                    url: 'https://api.whatsapp.com/send/?phone=51918303426&text=hola%20xd'
+                                    url: 'https://api.whatsapp.com/send/?phone=79054731060&text=hola%20xd'
                                 }
                             }, {
                             	urlButton: {
@@ -2959,8 +2959,8 @@ anu = `
   ⬡ ${prefix}group [option]
   ⬡ ${prefix}editinfo [option]
   ⬡ ${prefix}grupinfo
-  ⬡ ${prefix}add @user
-  ⬡ ${prefix}kick @user
+  ⬡ ${prefix}добавить @user
+  ⬡ ${prefix}удалить @user
   ⬡ ${prefix}promote @user
   ⬡ ${prefix}demote @user
   `
@@ -3525,8 +3525,8 @@ break
 ║├⬡ ${prefix}group [option]
 ║├⬡ ${prefix}editinfo [option]
 ║├⬡ ${prefix}grupinfo
-║├⬡ ${prefix}add @user
-║├⬡ ${prefix}kick @user
+║├⬡ ${prefix}добавить @user
+║├⬡ ${prefix}удалить @user
 ║├⬡ ${prefix}promote @user
 ║├⬡ ${prefix}demote @user
 ║├⬡ ${prefix}tagall
