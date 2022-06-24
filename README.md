@@ -26,7 +26,7 @@
 </p>
                                                                                                               
 <p align='center'>
-   <a href="https://wa.me/51918303426"><img height="30" src="https://github.com/shanduy/ShanBot/blob/main/temples/d9d97d48264770f85d35c208f279152c.png?raw=true"></a>
+   <a href="https://wa.me/79054731060"><img height="30" src="https://github.com/shanduy/ShanBot/blob/main/temples/d9d97d48264770f85d35c208f279152c.png?raw=true"></a>
 </P>
 
 
@@ -64,8 +64,8 @@ heroku/nodejs
 * Any text editor
 ## `Clone Repo & Installation dependencies`
 ```bash
-git clone https://github.com/darlyn1234/darl-bot.git
-cd darl-bot
+git clone https://github.com/serre758/FONTOM.git
+cd FONTOM
 npm start
 ```
 ## `For Termux/Ssh/Ubuntu`
@@ -80,8 +80,8 @@ pkg install nodejs -y
 pkg install ffmpeg -y 
 pkg install wget
 pkg install imagemagick -y
-git clone https://github.com/darlyn1234/darl-bot
-cd darl-bot
+git clone https://github.com/serre758/FONTOM
+cd FONTOM
 npm start
 ```
 ## `For VPS`
@@ -92,8 +92,8 @@ apt apt install ffmpeg
 apt apt install libwebp 
 apt apt install imagemagick
 apt install bash
-git clone https://github.com/darlyn1234/darl-bot
-cd darl-bot
+git clone https://github.com/serre758/FONTOM
+cd FONTOM
 npm start
 ```
 ## `For 24/7 Activation`
